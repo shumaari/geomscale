@@ -1,0 +1,2579 @@
+UpdateCTestConfiguration  from :/home/geom/geomshu/volesti6/test/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/home/geom/geomshu/volesti6/test/DartConfiguration.tcl
+Test project /home/geom/geomshu/volesti6/test
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+      Start  1: test_psrf
+
+1: Test command: /home/geom/geomshu/volesti6/test/mcmc_diagnostics_test "-tc=psrf"
+1: Working Directory: /home/geom/geomshu/volesti6/test
+1: Test timeout computed to be: 10000000
+test 2
+      Start  2: test_univariate_psrf
+
+2: Test command: /home/geom/geomshu/volesti6/test/mcmc_diagnostics_test "-tc=univariate_psrf"
+2: Working Directory: /home/geom/geomshu/volesti6/test
+2: Test timeout computed to be: 10000000
+2: [doctest] doctest version is "2.4.9"
+2: [doctest] run with "--help" for options
+2: --- Testing psrf on Billiard Walk and H-cube10
+1: [doctest] doctest version is "2.4.9"
+1: [doctest] run with "--help" for options
+1: --- Testing psrf on Billiard Walk and H-cube10
+1: psrf = 1.00269
+1: ===============================================================================
+1: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+1: [doctest] assertions: 1 | 1 passed | 0 failed |
+1: [doctest] Status: SUCCESS!
+ 1/82 Test  #1: test_psrf ................................................   Passed    0.24 sec
+test 3
+      Start  3: test_interval_psrf
+
+3: Test command: /home/geom/geomshu/volesti6/test/mcmc_diagnostics_test "-tc=interval_psrf"
+3: Working Directory: /home/geom/geomshu/volesti6/test
+3: Test timeout computed to be: 10000000
+3: [doctest] doctest version is "2.4.9"
+3: [doctest] run with "--help" for options
+3: --- Testing psrf on Billiard Walk and H-cube10
+2: univariate psrf =  1.00005 0.999911 0.999988 0.999911 0.999943  1.00023  1.00007 0.999955 0.999981 0.999905
+2: ===============================================================================
+2: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+2: [doctest] assertions: 1 | 1 passed | 0 failed |
+2: [doctest] Status: SUCCESS!
+ 2/82 Test  #2: test_univariate_psrf .....................................   Passed    0.24 sec
+test 4
+      Start  4: test_ess
+
+4: Test command: /home/geom/geomshu/volesti6/test/mcmc_diagnostics_test "-tc=ess"
+4: Working Directory: /home/geom/geomshu/volesti6/test
+4: Test timeout computed to be: 10000000
+4: [doctest] doctest version is "2.4.9"
+4: [doctest] run with "--help" for options
+4: --- Testing psrf on Billiard Walk and H-cube10
+3: interval psrfs = 1.00051 1.00003  1.0002  1.0007 1.00025 1.00092 1.00103 1.00041 1.00045 1.00055
+3: ===============================================================================
+3: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+3: [doctest] assertions: 1 | 1 passed | 0 failed |
+3: [doctest] Status: SUCCESS!
+ 3/82 Test  #3: test_interval_psrf .......................................   Passed    0.26 sec
+test 5
+      Start  5: test_geweke
+
+5: Test command: /home/geom/geomshu/volesti6/test/mcmc_diagnostics_test "-tc=geweke"
+5: Working Directory: /home/geom/geomshu/volesti6/test
+5: Test timeout computed to be: 10000000
+4: ess = 9880.89   10000 9887.83 9794.59 9943.22 7775.64   10000   10000 9703.68 9467.23
+4: ===============================================================================
+4: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+4: [doctest] assertions: 1 | 1 passed | 0 failed |
+4: [doctest] Status: SUCCESS!
+5: [doctest] doctest version is "2.4.9"
+5: [doctest] run with "--help" for options
+5: --- Testing psrf on Billiard Walk and H-cube10
+ 4/82 Test  #4: test_ess .................................................   Passed    0.26 sec
+test 6
+      Start  6: test_raftery
+
+6: Test command: /home/geom/geomshu/volesti6/test/mcmc_diagnostics_test "-tc=raftery"
+6: Working Directory: /home/geom/geomshu/volesti6/test
+6: Test timeout computed to be: 10000000
+6: [doctest] doctest version is "2.4.9"
+6: [doctest] run with "--help" for options
+6: --- Testing psrf on Billiard Walk and H-cube10
+5: geweke = 1
+5: ===============================================================================
+5: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+5: [doctest] assertions: 1 | 1 passed | 0 failed |
+5: [doctest] Status: SUCCESS!
+ 5/82 Test  #5: test_geweke ..............................................   Passed    0.26 sec
+test 7
+      Start  7: test_dikin
+
+7: Test command: /home/geom/geomshu/volesti6/test/sampling_test "-tc=dikin"
+7: Working Directory: /home/geom/geomshu/volesti6/test
+7: Test timeout computed to be: 10000000
+7: [doctest] doctest version is "2.4.9"
+7: [doctest] run with "--help" for options
+7: --- Testing Dikin Walk for H-cube10
+6: raftery walk length to get indepedent samples, 1st coordinate = 1
+6: ===============================================================================
+6: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+6: [doctest] assertions: 1 | 1 passed | 0 failed |
+6: [doctest] Status: SUCCESS!
+ 6/82 Test  #6: test_raftery .............................................   Passed    0.26 sec
+test 8
+      Start  8: test_john
+
+8: Test command: /home/geom/geomshu/volesti6/test/sampling_test "-tc=john"
+8: Working Directory: /home/geom/geomshu/volesti6/test
+8: Test timeout computed to be: 10000000
+8: [doctest] doctest version is "2.4.9"
+8: [doctest] run with "--help" for options
+8: --- Testing John Walk for H-cube10
+7: psrf = 1.03648
+7: ===============================================================================
+7: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+7: [doctest] assertions: 1 | 1 passed | 0 failed |
+7: [doctest] Status: SUCCESS!
+ 7/82 Test  #7: test_dikin ...............................................   Passed    0.94 sec
+test 9
+      Start  9: test_vaidya
+
+9: Test command: /home/geom/geomshu/volesti6/test/sampling_test "-tc=vaidya"
+9: Working Directory: /home/geom/geomshu/volesti6/test
+9: Test timeout computed to be: 10000000
+9: [doctest] doctest version is "2.4.9"
+9: [doctest] run with "--help" for options
+9: --- Testing Vaidya Walk for H-cube10
+9: psrf = 1.05061
+9: ===============================================================================
+9: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+9: [doctest] assertions: 1 | 1 passed | 0 failed |
+9: [doctest] Status: SUCCESS!
+ 8/82 Test  #9: test_vaidya ..............................................   Passed    1.65 sec
+test 10
+      Start 10: test_brdhr
+
+10: Test command: /home/geom/geomshu/volesti6/test/sampling_test "-tc=brdhr"
+10: Working Directory: /home/geom/geomshu/volesti6/test
+10: Test timeout computed to be: 10000000
+10: [doctest] doctest version is "2.4.9"
+10: [doctest] run with "--help" for options
+10: --- Testing Boundary RDHR for H-cube10
+10: psrf = 1.00137
+10: ===============================================================================
+10: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+10: [doctest] assertions: 1 | 1 passed | 0 failed |
+10: [doctest] Status: SUCCESS!
+ 9/82 Test #10: test_brdhr ...............................................   Passed    0.03 sec
+test 11
+      Start 11: test_bcdhr
+
+11: Test command: /home/geom/geomshu/volesti6/test/sampling_test "-tc=bcdhr"
+11: Working Directory: /home/geom/geomshu/volesti6/test
+11: Test timeout computed to be: 10000000
+11: [doctest] doctest version is "2.4.9"
+11: [doctest] run with "--help" for options
+11: --- Testing Boundary CDHR for H-cube10
+11: psrf = 1.00212
+11: ===============================================================================
+11: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+11: [doctest] assertions: 1 | 1 passed | 0 failed |
+11: [doctest] Status: SUCCESS!
+10/82 Test #11: test_bcdhr ...............................................   Passed    0.01 sec
+test 12
+      Start 12: test_grdhr
+
+12: Test command: /home/geom/geomshu/volesti6/test/sampling_test "-tc=grdhr"
+12: Working Directory: /home/geom/geomshu/volesti6/test
+12: Test timeout computed to be: 10000000
+12: [doctest] doctest version is "2.4.9"
+12: [doctest] run with "--help" for options
+12: --- Testing Gaussian RDHR for H-cube10
+12: psrf = 1.00105
+12: ===============================================================================
+12: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+12: [doctest] assertions: 1 | 1 passed | 0 failed |
+12: [doctest] Status: SUCCESS!
+11/82 Test #12: test_grdhr ...............................................   Passed    0.08 sec
+test 13
+      Start 13: test_gbaw
+
+13: Test command: /home/geom/geomshu/volesti6/test/sampling_test "-tc=gbaw"
+13: Working Directory: /home/geom/geomshu/volesti6/test
+13: Test timeout computed to be: 10000000
+13: [doctest] doctest version is "2.4.9"
+13: [doctest] run with "--help" for options
+13: --- Testing Gaussian Ball Walk for H-cube10
+13: psrf = 1.00116
+13: ===============================================================================
+13: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+13: [doctest] assertions: 1 | 1 passed | 0 failed |
+13: [doctest] Status: SUCCESS!
+12/82 Test #13: test_gbaw ................................................   Passed    0.04 sec
+test 14
+      Start 14: test_ghmc
+
+14: Test command: /home/geom/geomshu/volesti6/test/sampling_test "-tc=ghmc"
+14: Working Directory: /home/geom/geomshu/volesti6/test
+14: Test timeout computed to be: 10000000
+14: [doctest] doctest version is "2.4.9"
+14: [doctest] run with "--help" for options
+14: --- Testing Gaussian exact HMC for H-cube10
+14: psrf = 1.00039
+14: ===============================================================================
+14: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+14: [doctest] assertions: 1 | 1 passed | 0 failed |
+14: [doctest] Status: SUCCESS!
+13/82 Test #14: test_ghmc ................................................   Passed    1.18 sec
+test 15
+      Start 15: test_mmcs
+
+15: Test command: /home/geom/geomshu/volesti6/test/mmcs_test "-tc=mmcs"
+15: Working Directory: /home/geom/geomshu/volesti6/test
+15: Test timeout computed to be: 10000000
+15: [doctest] doctest version is "2.4.9"
+15: [doctest] run with "--help" for options
+15: target effective sample size = 4000
+15: 
+15: phase 1: number of correlated samples = 1000, effective sample size = 632, ratio of the maximum singilar value over the minimum singular value = 4.52042
+15: phase 2: number of correlated samples = 1000, effective sample size = 632, ratio of the maximum singilar value over the minimum singular value = 2.92027
+15: phase 3: number of correlated samples = 3900, effective sample size = 2833
+15: 
+15: sum of effective sample sizes: 4097
+15: multivariate PSRF: 1.03216
+15: maximum marginal PSRF: 1.00067
+15: ===============================================================================
+15: [doctest] test cases: 1 | 1 passed | 0 failed | 0 skipped
+15: [doctest] assertions: 1 | 1 passed | 0 failed |
+15: [doctest] Status: SUCCESS!
+14/82 Test #15: test_mmcs ................................................   Passed    1.64 sec
+test 16
+      Start 16: ode_solvers_test_first_order
+
+16: Test command: /home/geom/geomshu/volesti6/test/ode_solvers_test "-tc=first_order"
+16: Working Directory: /home/geom/geomshu/volesti6/test
+16: Test timeout computed to be: 10000000
+16: [doctest] doctest version is "2.4.9"
+16: [doctest] run with "--help" for options
+16: --- Testing solution to dx / dt = -x
+16: Dimensionality: 100
+16: Norm of states after 2000 steps: 1.86376e-08
+16: Target Norm: 0
+16: Error (relative if applicable): 1.86376e-08
+16: ETA (us): 276
+16: 
+16: Dimensionality: 100
+16: Norm of states after 1000 steps: 1.14307e-56
+16: Target Norm: 0
+16: Error (relative if applicable): 1.14307e-56
+16: ETA (us): 1103
+16: 
+16: Dimensionality: 100
+16: Norm of states after 1000 steps: 7.02354e-23
+16: Target Norm: 0
+16: Error (relative if applicable): 7.02354e-23
+16: ETA (us): 16124
+16: 
+16: --- Testing solution to dx / dt = x in [-1, 1]
+16: Dimensionality: 1
+16: Norm of states after 1000 steps: 0.998319
+16: Target Norm: 1
+16: Error (relative if applicable): 0.00168059
+16: ETA (us): 1375
+16: 
+16: --- Testing hamiltonian solution to f(x)=-x^2/2 in [-1, 1]
+16: ===============================================================================
+16: [doctest] test cases:    1 |    1 passed | 0 failed | 1 skipped
+16: [doctest] assertions: 1004 | 1004 passed | 0 failed |
+16: [doctest] Status: SUCCESS!
+15/82 Test #16: ode_solvers_test_first_order .............................   Passed    0.03 sec
+test 17
+      Start 17: ode_solvers_test_second_order
+
+17: Test command: /home/geom/geomshu/volesti6/test/ode_solvers_test "-tc=second_order"
+17: Working Directory: /home/geom/geomshu/volesti6/test
+17: Test timeout computed to be: 10000000
+17: [doctest] doctest version is "2.4.9"
+17: [doctest] run with "--help" for options
+17: --- Testing solution to d^2x / dt^2 = -x
+17: Dimensionality: 3
+17: Target UB Norm for index 0: 1.90526
+17: ETA (us): 185
+17: 
+17: Dimensionality: 1
+17: Target UB Norm for index 0: 1.1
+17: ETA (us): 236
+17: 
+17: ===============================================================================
+17: [doctest] test cases:    1 |    1 passed | 0 failed | 1 skipped
+17: [doctest] assertions: 2000 | 2000 passed | 0 failed |
+17: [doctest] Status: SUCCESS!
+16/82 Test #17: ode_solvers_test_second_order ............................   Passed    0.00 sec
+test 18
+      Start 18: root_finders_test_root_finders
+
+18: Test command: /home/geom/geomshu/volesti6/test/root_finders_test "-tc=root_finders"
+18: Working Directory: /home/geom/geomshu/volesti6/test
+18: Test timeout computed to be: 10000000
+18: [doctest] doctest version is "2.4.9"
+18: [doctest] run with "--help" for options
+18: ===============================================================================
+18: [doctest] test cases: 0 | 0 passed | 0 failed | 0 skipped
+18: [doctest] assertions: 0 | 0 passed | 0 failed |
+18: [doctest] Status: SUCCESS!
+17/82 Test #18: root_finders_test_root_finders ...........................   Passed    0.00 sec
+test 19
+      Start 19: crhmc_polytope_test_preparation
+
+19: Test command: /home/geom/geomshu/volesti6/test/crhmc_polytope_preparation_test "-tc=test_preparation_crhmc"
+19: Working Directory: /home/geom/geomshu/volesti6/test
+19: Test timeout computed to be: 10000000
+19: [doctest] doctest version is "2.4.9"
+19: [doctest] run with "--help" for options
+19: --- Testing CRHMC data preprocessing
+19: ===============================================================================
+19: [doctest] test cases:      1 |      1 passed | 0 failed | 3 skipped
+19: [doctest] assertions: 125172 | 125172 passed | 0 failed |
+19: [doctest] Status: SUCCESS!
+18/82 Test #19: crhmc_polytope_test_preparation ..........................   Passed    0.75 sec
+test 20
+      Start 20: crhmc_test_fixed_vars
+
+20: Test command: /home/geom/geomshu/volesti6/test/crhmc_polytope_preparation_test "-tc=test_fixed_vars_crhmc"
+20: Working Directory: /home/geom/geomshu/volesti6/test
+20: Test timeout computed to be: 10000000
+20: [doctest] doctest version is "2.4.9"
+20: [doctest] run with "--help" for options
+20: --- Testing fixed vars
+20: ===============================================================================
+20: [doctest] test cases:  1 |  1 passed | 0 failed | 3 skipped
+20: [doctest] assertions: 30 | 30 passed | 0 failed |
+20: [doctest] Status: SUCCESS!
+19/82 Test #20: crhmc_test_fixed_vars ....................................   Passed    0.00 sec
+test 21
+      Start 21: crhmc_test_dep_vars
+
+21: Test command: /home/geom/geomshu/volesti6/test/crhmc_polytope_preparation_test "-tc=test_dep_vars_crhmc"
+21: Working Directory: /home/geom/geomshu/volesti6/test
+21: Test timeout computed to be: 10000000
+21: [doctest] doctest version is "2.4.9"
+21: [doctest] run with "--help" for options
+21: --- Testing dep vars
+21: ===============================================================================
+21: [doctest] test cases: 1 | 1 passed | 0 failed | 3 skipped
+21: [doctest] assertions: 2 | 2 passed | 0 failed |
+21: [doctest] Status: SUCCESS!
+20/82 Test #21: crhmc_test_dep_vars ......................................   Passed    0.00 sec
+test 22
+      Start 22: crhmc_test_center_computation
+
+22: Test command: /home/geom/geomshu/volesti6/test/crhmc_polytope_preparation_test "-tc=test_center_computation"
+22: Working Directory: /home/geom/geomshu/volesti6/test
+22: Test timeout computed to be: 10000000
+22: [doctest] doctest version is "2.4.9"
+22: [doctest] run with "--help" for options
+22: --- Testing CRHMC polytope-center computation
+22: ===============================================================================
+22: [doctest] test cases: 1 | 1 passed | 0 failed | 3 skipped
+22: [doctest] assertions: 4 | 4 passed | 0 failed |
+22: [doctest] Status: SUCCESS!
+21/82 Test #22: crhmc_test_center_computation ............................   Passed    0.00 sec
+test 23
+      Start 23: boundary_oracles_test_h_poly_oracles
+
+23: Test command: /home/geom/geomshu/volesti6/test/boundary_oracles_test "-tc=h_poly_oracles"
+23: Working Directory: /home/geom/geomshu/volesti6/test
+23: Test timeout computed to be: 10000000
+23: [doctest] doctest version is "2.4.9"
+23: [doctest] run with "--help" for options
+23: ===============================================================================
+23: [doctest] test cases: 0 | 0 passed | 0 failed | 0 skipped
+23: [doctest] assertions: 0 | 0 passed | 0 failed |
+23: [doctest] Status: SUCCESS!
+22/82 Test #23: boundary_oracles_test_h_poly_oracles .....................   Passed    0.00 sec
+test 24
+      Start 24: volume_sob_hpolytope_cube
+
+24: Test command: /home/geom/geomshu/volesti6/test/volume_sob_hpolytope "-tc=cube"
+24: Working Directory: /home/geom/geomshu/volesti6/test
+24: Test timeout computed to be: 10000000
+24: [doctest] doctest version is "2.4.9"
+24: [doctest] run with "--help" for options
+24: --- Testing volume of H-cube10
+24: Number type: d
+24: Computed volume 985.088
+24: Expected volume = 1014.69
+24: Relative error (expected) = 0.0291733
+24: Relative error (exact) = 0.0379999
+24: Computed volume 1049.22
+24: Expected volume = 1049.22
+24: Relative error (expected) = 3.55462e-07
+24: Relative error (exact) = 0.0246293
+24: Computed volume 969.683
+24: Expected volume = 1055.73
+24: Relative error (expected) = 0.0815047
+24: Relative error (exact) = 0.0530439
+24: Computed volume 969.683
+24: Expected volume = 1055.73
+24: Relative error (expected) = 0.0815047
+24: Relative error (exact) = 0.0530439
+24: --- Testing volume of H-cube20
+24: Number type: d
+24: Computed volume 1.07218e+06
+24: Expected volume = 1.02978e+06
+24: Relative error (expected) = 0.0411754
+24: Relative error (exact) = 0.022512
+24: Computed volume 1.05618e+06
+24: Expected volume = 1.05618e+06
+24: Relative error (expected) = 2.67147e-06
+24: Relative error (exact) = 0.00725443
+8: psrf = 1.01847
+8: ===============================================================================
+8: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+8: [doctest] assertions: 1 | 1 passed | 0 failed |
+8: [doctest] Status: SUCCESS!
+23/82 Test  #8: test_john ................................................   Passed   11.75 sec
+test 25
+      Start 25: volume_sob_hpolytope_cross
+
+25: Test command: /home/geom/geomshu/volesti6/test/volume_sob_hpolytope "-tc=cross"
+25: Working Directory: /home/geom/geomshu/volesti6/test
+25: Test timeout computed to be: 10000000
+25: [doctest] doctest version is "2.4.9"
+25: [doctest] run with "--help" for options
+25: --- Testing volume of H-cross10
+25: Number type: d
+25: Computed volume 0.000290503
+25: Expected volume = 0.000283788
+25: Relative error (expected) = 0.0236632
+25: Relative error (exact) = 0.0294714
+24: Computed volume 1.04555e+06
+24: Expected volume = 1.05883e+06
+24: Relative error (expected) = 0.0125381
+24: Relative error (exact) = 0.00288169
+24: Computed volume 1.04555e+06
+24: Expected volume = 1.05883e+06
+24: Relative error (expected) = 0.0125381
+24: Relative error (exact) = 0.00288169
+24: ===============================================================================
+24: [doctest] test cases: 1 | 1 passed | 0 failed | 6 skipped
+24: [doctest] assertions: 8 | 8 passed | 0 failed |
+24: [doctest] Status: SUCCESS!
+24/82 Test #24: volume_sob_hpolytope_cube ................................   Passed    6.13 sec
+test 26
+      Start 26: volume_sob_hpolytope_birkhoff
+
+26: Test command: /home/geom/geomshu/volesti6/test/volume_sob_hpolytope "-tc=birk"
+26: Working Directory: /home/geom/geomshu/volesti6/test
+26: Test timeout computed to be: 10000000
+26: [doctest] doctest version is "2.4.9"
+26: [doctest] run with "--help" for options
+26: --- Testing volume of H-birk3
+26: Number type: d
+26: Computed volume 0.120708
+26: Expected volume = 0.130806
+26: Relative error (expected) = 0.0772018
+26: Relative error (exact) = 0.0343396
+26: Computed volume 0.126776
+26: Expected volume = 0.126776
+26: Relative error (expected) = 1.0525e-07
+26: Relative error (exact) = 0.0142079
+26: Computed volume 0.119489
+26: Expected volume = 0.122177
+26: Relative error (expected) = 0.0220023
+26: Relative error (exact) = 0.0440894
+26: Computed volume 0.119489
+26: Expected volume = 0.122177
+26: Relative error (expected) = 0.0220023
+26: Relative error (exact) = 0.0440894
+26: --- Testing volume of H-birk4
+26: Number type: d
+25: Computed volume 0.000280815
+25: Expected volume = 0.000280815
+25: Relative error (expected) = 2.44511e-07
+25: Relative error (exact) = 0.00486191
+26: Computed volume 0.000935426
+26: Expected volume = 0.00112925
+26: Relative error (expected) = 0.17164
+26: Relative error (exact) = 0.0356614
+26: Computed volume 0.000898527
+26: Expected volume = 0.000898527
+26: Relative error (expected) = 3.13174e-07
+26: Relative error (exact) = 0.073701
+26: Computed volume 0.000936353
+26: Expected volume = 0.000945447
+26: Relative error (expected) = 0.00961894
+26: Relative error (exact) = 0.0347058
+26: Computed volume 0.000936353
+26: Expected volume = 0.000945447
+26: Relative error (expected) = 0.00961894
+26: Relative error (exact) = 0.0347058
+26: --- Testing volume of H-birk5
+26: Number type: d
+25: Computed volume 0.000287524
+25: Expected volume = 0.000296745
+25: Relative error (expected) = 0.0310724
+25: Relative error (exact) = 0.0189148
+25: Computed volume 0.000287524
+25: Expected volume = 0.000296745
+25: Relative error (expected) = 0.0310724
+25: Relative error (exact) = 0.0189148
+25: ===============================================================================
+25: [doctest] test cases: 1 | 1 passed | 0 failed | 6 skipped
+25: [doctest] assertions: 4 | 4 passed | 0 failed |
+25: [doctest] Status: SUCCESS!
+25/82 Test #25: volume_sob_hpolytope_cross ...............................   Passed    2.51 sec
+test 27
+      Start 27: volume_sob_hpolytope_prod_simplex
+
+27: Test command: /home/geom/geomshu/volesti6/test/volume_sob_hpolytope "-tc=prod_simplex"
+27: Working Directory: /home/geom/geomshu/volesti6/test
+27: Test timeout computed to be: 10000000
+27: [doctest] doctest version is "2.4.9"
+27: [doctest] run with "--help" for options
+27: --- Testing volume of H-prod_simplex5
+27: Number type: d
+27: Computed volume 7.03584e-05
+27: Expected volume = 7.35223e-05
+27: Relative error (expected) = 0.0430325
+27: Relative error (exact) = 0.0131617
+27: Computed volume 6.86576e-05
+27: Expected volume = 6.86576e-05
+27: Relative error (expected) = 4.34839e-07
+27: Relative error (exact) = 0.011331
+26: Computed volume 1.75176e-07
+26: Expected volume = 1.75176e-07
+26: Relative error (expected) = 1.28417e-06
+26: Relative error (exact) = 0.221441
+27: Computed volume 6.78605e-05
+27: Expected volume = 7.43136e-05
+27: Relative error (expected) = 0.0868366
+27: Relative error (exact) = 0.0228094
+27: Computed volume 6.78605e-05
+27: Expected volume = 7.43136e-05
+27: Relative error (expected) = 0.0868366
+27: Relative error (exact) = 0.0228094
+27: --- Testing volume of H-prod_simplex10
+27: Number type: d
+26: Computed volume 2.07943e-07
+26: Expected volume = 2.07943e-07
+26: Relative error (expected) = 1.68918e-06
+26: Relative error (exact) = 0.0758105
+27: Computed volume 7.36178e-14
+27: Expected volume = 7.38925e-14
+27: Relative error (expected) = 0.00371704
+27: Relative error (exact) = 0.0305864
+27: Computed volume 8.01351e-14
+27: Expected volume = 8.01351e-14
+27: Relative error (expected) = 2.69799e-07
+27: Relative error (exact) = 0.0552345
+26: Computed volume 2.55711e-07
+26: Expected volume = 2.80779e-07
+26: Relative error (expected) = 0.0892798
+26: Relative error (exact) = 0.136494
+26: Computed volume 2.55711e-07
+26: Expected volume = 2.80779e-07
+26: Relative error (expected) = 0.0892798
+26: Relative error (exact) = 0.136494
+26: --- Testing volume of H-birk6
+26: Number type: d
+27: Computed volume 7.92832e-14
+27: Expected volume = 8.27387e-14
+27: Relative error (expected) = 0.0417642
+27: Relative error (exact) = 0.044016
+27: Computed volume 7.92832e-14
+27: Expected volume = 8.27387e-14
+27: Relative error (expected) = 0.0417642
+27: Relative error (exact) = 0.044016
+27: --- Testing volume of H-prod_simplex15
+27: Number type: d
+26: Computed volume 5.71076e-13
+26: Expected volume = 5.71076e-13
+26: Relative error (expected) = 6.16539e-07
+26: Relative error (exact) = 0.396036
+26: Computed volume 9.55284e-13
+26: Expected volume = 9.48912e-13
+26: Relative error (expected) = 0.00671524
+26: Relative error (exact) = 0.0102991
+27: Computed volume 5.57339e-25
+27: Expected volume = 5.61238e-25
+27: Relative error (expected) = 0.00694784
+27: Relative error (exact) = 0.0469441
+27: Computed volume 5.87558e-25
+27: Expected volume = 5.87558e-25
+27: Relative error (expected) = 7.62152e-07
+27: Relative error (exact) = 0.00473061
+26: Computed volume 8.47566e-13
+26: Expected volume = 6.96476e-13
+26: Relative error (expected) = 0.216936
+26: Relative error (exact) = 0.103622
+26: Computed volume 8.47566e-13
+26: Expected volume = 6.96476e-13
+26: Relative error (expected) = 0.216936
+26: Relative error (exact) = 0.103622
+26: ===============================================================================
+26: [doctest] test cases:  1 |  1 passed | 0 failed | 6 skipped
+26: [doctest] assertions: 16 | 16 passed | 0 failed |
+26: [doctest] Status: SUCCESS!
+26/82 Test #26: volume_sob_hpolytope_birkhoff ............................   Passed   29.88 sec
+test 28
+      Start 28: volume_sob_hpolytope_simplex
+
+28: Test command: /home/geom/geomshu/volesti6/test/volume_sob_hpolytope "-tc=simplex"
+28: Working Directory: /home/geom/geomshu/volesti6/test
+28: Test timeout computed to be: 10000000
+28: [doctest] doctest version is "2.4.9"
+28: [doctest] run with "--help" for options
+28: --- Testing volume of H-simplex10
+28: Number type: d
+28: Computed volume 2.74631e-07
+28: Expected volume = 2.98074e-07
+28: Relative error (expected) = 0.0786493
+28: Relative error (exact) = 0.00342012
+28: Computed volume 2.52756e-07
+28: Expected volume = 2.52756e-07
+28: Relative error (expected) = 1.43151e-06
+28: Relative error (exact) = 0.0827977
+28: Computed volume 2.81579e-07
+28: Expected volume = 2.89366e-07
+28: Relative error (expected) = 0.0269097
+28: Relative error (exact) = 0.0217948
+28: Computed volume 2.81579e-07
+28: Expected volume = 2.89366e-07
+28: Relative error (expected) = 0.0269097
+28: Relative error (exact) = 0.0217948
+28: --- Testing volume of H-simplex20
+28: Number type: d
+28: Computed volume 4.13723e-19
+28: Expected volume = 4.64611e-19
+28: Relative error (expected) = 0.109527
+28: Relative error (exact) = 0.00654858
+28: Computed volume 4.4317e-19
+28: Expected volume = 4.4317e-19
+28: Relative error (expected) = 4.54657e-07
+28: Relative error (exact) = 0.0781897
+28: Computed volume 4.12885e-19
+28: Expected volume = 4.16737e-19
+28: Relative error (expected) = 0.00924392
+28: Relative error (exact) = 0.00450806
+28: Computed volume 4.12885e-19
+28: Expected volume = 4.16737e-19
+28: Relative error (expected) = 0.00924392
+28: Relative error (exact) = 0.00450806
+28: --- Testing volume of H-simplex30
+28: Number type: d
+27: Computed volume 6.14854e-25
+27: Expected volume = 5.48179e-25
+27: Relative error (expected) = 0.12163
+27: Relative error (exact) = 0.0514076
+27: Computed volume 6.14854e-25
+27: Expected volume = 5.48179e-25
+27: Relative error (expected) = 0.12163
+27: Relative error (exact) = 0.0514076
+27: ===============================================================================
+27: [doctest] test cases:  1 |  1 passed | 0 failed | 6 skipped
+27: [doctest] assertions: 12 | 12 passed | 0 failed |
+27: [doctest] Status: SUCCESS!
+27/82 Test #27: volume_sob_hpolytope_prod_simplex ........................   Passed   35.98 sec
+test 29
+      Start 29: volume_sob_hpolytope_skinny_cube
+
+29: Test command: /home/geom/geomshu/volesti6/test/volume_sob_hpolytope "-tc=skinny_cube"
+29: Working Directory: /home/geom/geomshu/volesti6/test
+29: Test timeout computed to be: 10000000
+29: [doctest] doctest version is "2.4.9"
+29: [doctest] run with "--help" for options
+29: --- Testing volume of H-skinny_cube10
+29: ===============================================================================
+29: [doctest] test cases: 1 | 1 passed | 0 failed | 6 skipped
+29: [doctest] assertions: 0 | 0 passed | 0 failed |
+29: [doctest] Status: SUCCESS!
+28/82 Test #29: volume_sob_hpolytope_skinny_cube .........................   Passed    0.00 sec
+test 30
+      Start 30: volume_sob_hpolytope_cube_overflow
+
+30: Test command: /home/geom/geomshu/volesti6/test/volume_sob_hpolytope "-tc=cube_overflow"
+30: Working Directory: /home/geom/geomshu/volesti6/test
+30: Test timeout computed to be: 1
+30: [doctest] doctest version is "2.4.9"
+30: [doctest] run with "--help" for options
+30: --- Testing volume of H-cube1
+30: Number type: d
+30: Computed volume 2
+30: Expected volume = 2
+30: Relative error (expected) = 1.11022e-16
+30: Relative error (exact) = 1.11022e-16
+30: Computed volume 2
+30: Expected volume = 2
+30: Relative error (expected) = 1.11022e-16
+30: Relative error (exact) = 1.11022e-16
+30: Computed volume 2
+30: Expected volume = 2
+30: Relative error (expected) = 1.11022e-16
+30: Relative error (exact) = 1.11022e-16
+30: Computed volume 2
+30: Expected volume = 2
+30: Relative error (expected) = 1.11022e-16
+30: Relative error (exact) = 1.11022e-16
+30: ===============================================================================
+30: [doctest] test cases: 1 | 1 passed | 0 failed | 6 skipped
+30: [doctest] assertions: 4 | 4 passed | 0 failed |
+30: [doctest] Status: SUCCESS!
+29/82 Test #30: volume_sob_hpolytope_cube_overflow .......................   Passed    0.00 sec
+test 31
+      Start 31: volume_sob_vpolytope_cube
+
+31: Test command: /home/geom/geomshu/volesti6/test/volume_sob_vpolytope "-tc=cube"
+31: Working Directory: /home/geom/geomshu/volesti6/test
+31: Test timeout computed to be: 10000000
+31: [doctest] doctest version is "2.4.9"
+31: [doctest] run with "--help" for options
+31: --- Testing volume of V-cube3
+31: Number type: d
+31: Computed volume 8.53024
+31: Expected volume = 8.80869
+31: Relative error (expected) = 0.0316105
+31: Relative error (exact) = 0.0662804
+31: ===============================================================================
+31: [doctest] test cases: 1 | 1 passed | 0 failed | 2 skipped
+31: [doctest] assertions: 1 | 1 passed | 0 failed |
+31: [doctest] Status: SUCCESS!
+30/82 Test #31: volume_sob_vpolytope_cube ................................   Passed    1.96 sec
+test 32
+      Start 32: volume_sob_vpolytope_cross
+
+32: Test command: /home/geom/geomshu/volesti6/test/volume_sob_vpolytope "-tc=cross"
+32: Working Directory: /home/geom/geomshu/volesti6/test
+32: Test timeout computed to be: 10000000
+32: [doctest] doctest version is "2.4.9"
+32: [doctest] run with "--help" for options
+32: --- Testing volume of V-cross5
+32: Number type: d
+32: Computed volume 0.26739
+32: Expected volume = 0.276845
+32: Relative error (expected) = 0.0341541
+32: Relative error (exact) = 0.00271106
+32: ===============================================================================
+32: [doctest] test cases: 1 | 1 passed | 0 failed | 2 skipped
+32: [doctest] assertions: 1 | 1 passed | 0 failed |
+32: [doctest] Status: SUCCESS!
+31/82 Test #32: volume_sob_vpolytope_cross ...............................   Passed    3.29 sec
+test 33
+      Start 33: volume_sob_vpolytope_simplex
+
+33: Test command: /home/geom/geomshu/volesti6/test/volume_sob_vpolytope "-tc=simplex"
+33: Working Directory: /home/geom/geomshu/volesti6/test
+33: Test timeout computed to be: 10000000
+33: [doctest] doctest version is "2.4.9"
+33: [doctest] run with "--help" for options
+33: --- Testing volume of V-simplex5
+33: Number type: d
+28: Computed volume 3.91407e-33
+28: Expected volume = 3.65853e-33
+28: Relative error (expected) = 0.0698486
+28: Relative error (exact) = 0.0382191
+28: Computed volume 3.86474e-33
+28: Expected volume = 3.86474e-33
+28: Relative error (expected) = 8.17562e-07
+28: Relative error (exact) = 0.0251342
+33: Computed volume 0.00876222
+33: Expected volume = 0.00810133
+33: Relative error (expected) = 0.0815786
+33: Relative error (exact) = 0.051467
+33: ===============================================================================
+33: [doctest] test cases: 1 | 1 passed | 0 failed | 2 skipped
+33: [doctest] assertions: 1 | 1 passed | 0 failed |
+33: [doctest] Status: SUCCESS!
+32/82 Test #33: volume_sob_vpolytope_simplex .............................   Passed   16.49 sec
+test 34
+      Start 34: volume_cg_hpolytope_cube
+
+34: Test command: /home/geom/geomshu/volesti6/test/volume_cg_hpolytope "-tc=cube"
+34: Working Directory: /home/geom/geomshu/volesti6/test
+34: Test timeout computed to be: 10000000
+34: [doctest] doctest version is "2.4.9"
+34: [doctest] run with "--help" for options
+34: --- Testing volume of H-cube10
+34: Number type: d
+34: Computed volume 1043.28
+34: Expected volume = 1079.56
+34: Relative error (expected) = 0.0336059
+34: Relative error (exact) = 0.0188285
+34: Computed volume 1014.29
+34: Expected volume = 1110.92
+34: Relative error (expected) = 0.0869816
+34: Relative error (exact) = 0.00948205
+34: Computed volume 1010.16
+34: Expected volume = 1113.93
+34: Relative error (expected) = 0.0931585
+34: Relative error (exact) = 0.0135176
+34: --- Testing volume of H-cube20
+34: Number type: d
+34: Computed volume 1.04892e+06
+34: Expected volume = 1.1025e+06
+34: Relative error (expected) = 0.048602
+34: Relative error (exact) = 0.000324533
+34: Computed volume 1.07887e+06
+34: Expected volume = 1.05174e+06
+34: Relative error (expected) = 0.0257921
+34: Relative error (exact) = 0.0288874
+34: Computed volume 1.00363e+06
+34: Expected volume = 995224
+34: Relative error (expected) = 0.00844307
+34: Relative error (exact) = 0.0428669
+34: ===============================================================================
+34: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+34: [doctest] assertions: 6 | 6 passed | 0 failed |
+34: [doctest] Status: SUCCESS!
+33/82 Test #34: volume_cg_hpolytope_cube .................................   Passed    2.85 sec
+test 35
+      Start 35: volume_cg_hpolytope_cross
+
+35: Test command: /home/geom/geomshu/volesti6/test/volume_cg_hpolytope "-tc=cross"
+35: Working Directory: /home/geom/geomshu/volesti6/test
+35: Test timeout computed to be: 10000000
+35: [doctest] doctest version is "2.4.9"
+35: [doctest] run with "--help" for options
+35: --- Testing volume of H-cross10
+35: Number type: d
+35: Computed volume 0.000295308
+35: Expected volume = 0.000292199
+35: Relative error (expected) = 0.0106403
+35: Relative error (exact) = 0.0464982
+35: Computed volume 0.000285244
+35: Expected volume = 0.000274014
+35: Relative error (expected) = 0.0409848
+35: Relative error (exact) = 0.0108351
+28: Computed volume 3.37844e-33
+28: Expected volume = 4.04136e-33
+28: Relative error (expected) = 0.164034
+28: Relative error (exact) = 0.103859
+28: Computed volume 3.37844e-33
+28: Expected volume = 4.04136e-33
+28: Relative error (expected) = 0.164034
+28: Relative error (exact) = 0.103859
+28: ===============================================================================
+28: [doctest] test cases:  1 |  1 passed | 0 failed | 6 skipped
+28: [doctest] assertions: 12 | 12 passed | 0 failed |
+28: [doctest] Status: SUCCESS!
+34/82 Test #28: volume_sob_hpolytope_simplex .............................   Passed   37.01 sec
+test 36
+      Start 36: volume_cg_hpolytope_birkhoff
+
+36: Test command: /home/geom/geomshu/volesti6/test/volume_cg_hpolytope "-tc=birk"
+36: Working Directory: /home/geom/geomshu/volesti6/test
+36: Test timeout computed to be: 10000000
+36: [doctest] doctest version is "2.4.9"
+36: [doctest] run with "--help" for options
+36: --- Testing volume of H-birk3
+36: Number type: d
+36: Computed volume 0.127629
+36: Expected volume = 0.122104
+36: Relative error (expected) = 0.0452455
+36: Relative error (exact) = 0.0210292
+36: Computed volume 0.121377
+36: Expected volume = 0.11326
+36: Relative error (expected) = 0.0716708
+36: Relative error (exact) = 0.0289805
+36: --- Testing volume of H-birk4
+36: Number type: d
+36: Computed volume 0.00110265
+36: Expected volume = 0.00108943
+36: Relative error (expected) = 0.0121379
+36: Relative error (exact) = 0.136735
+36: Computed volume 0.000986723
+36: Expected volume = 0.00110742
+36: Relative error (expected) = 0.108989
+36: Relative error (exact) = 0.0172216
+36: --- Testing volume of H-birk5
+36: Number type: d
+36: Computed volume 2.00331e-07
+36: Expected volume = 2.00743e-07
+36: Relative error (expected) = 0.0020504
+36: Relative error (exact) = 0.109638
+35: Computed volume 0.000270528
+35: Expected volume = 0.000294463
+35: Relative error (expected) = 0.0812826
+35: Relative error (exact) = 0.0413152
+35: ===============================================================================
+35: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+35: [doctest] assertions: 3 | 3 passed | 0 failed |
+35: [doctest] Status: SUCCESS!
+35/82 Test #35: volume_cg_hpolytope_cross ................................   Passed    6.55 sec
+test 37
+      Start 37: volume_cg_hpolytope_prod_simplex
+
+37: Test command: /home/geom/geomshu/volesti6/test/volume_cg_hpolytope "-tc=prod_simplex"
+37: Working Directory: /home/geom/geomshu/volesti6/test
+37: Test timeout computed to be: 10000000
+37: [doctest] doctest version is "2.4.9"
+37: [doctest] run with "--help" for options
+37: --- Testing volume of H-prod_simplex5
+37: Number type: d
+37: Computed volume 6.21536e-05
+37: Expected volume = 6.3448e-05
+37: Relative error (expected) = 0.0204003
+37: Relative error (exact) = 0.104988
+37: Computed volume 7.0829e-05
+37: Expected volume = 6.94695e-05
+37: Relative error (expected) = 0.01957
+37: Relative error (exact) = 0.0199379
+37: Computed volume 7.01432e-05
+37: Expected volume = 6.13242e-05
+37: Relative error (expected) = 0.143809
+37: Relative error (exact) = 0.0100616
+37: --- Testing volume of H-prod_simplex10
+37: Number type: d
+36: Computed volume 1.99681e-07
+36: Expected volume = 2.05779e-07
+36: Relative error (expected) = 0.0296348
+36: Relative error (exact) = 0.11253
+36: --- Testing volume of H-birk6
+36: Number type: d
+37: Computed volume 1.66017e-14
+37: Expected volume = 1.66017e-14
+37: Relative error (expected) = 2.07755e-07
+37: Relative error (exact) = 0.781386
+37: Computed volume 8.23029e-14
+37: Expected volume = 8.48116e-14
+37: Relative error (expected) = 0.0295799
+37: Relative error (exact) = 0.08378
+36: Computed volume 7.51051e-13
+36: Expected volume = 7.51051e-13
+36: Relative error (expected) = 1.96852e-07
+36: Relative error (exact) = 0.205696
+37: Computed volume 7.23421e-14
+37: Expected volume = 6.90898e-14
+37: Relative error (expected) = 0.0470735
+37: Relative error (exact) = 0.0473856
+37: --- Testing volume of H-prod_simplex15
+37: Number type: d
+37: Computed volume 2.0232e-29
+37: Expected volume = 2.0232e-29
+37: Relative error (expected) = 1.98012e-06
+37: Relative error (exact) = 0.999965
+37: Computed volume 6.07639e-25
+37: Expected volume = 5.4624e-25
+37: Relative error (expected) = 0.112403
+37: Relative error (exact) = 0.0390701
+37: Computed volume 5.40931e-25
+37: Expected volume = 6.95082e-25
+37: Relative error (expected) = 0.221774
+37: Relative error (exact) = 0.075001
+37: ===============================================================================
+37: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+37: [doctest] assertions: 9 | 9 passed | 0 failed |
+37: [doctest] Status: SUCCESS!
+36/82 Test #37: volume_cg_hpolytope_prod_simplex .........................   Passed   18.76 sec
+test 38
+      Start 38: volume_cg_hpolytope_simplex
+
+38: Test command: /home/geom/geomshu/volesti6/test/volume_cg_hpolytope "-tc=simplex"
+38: Working Directory: /home/geom/geomshu/volesti6/test
+38: Test timeout computed to be: 10000000
+38: [doctest] doctest version is "2.4.9"
+38: [doctest] run with "--help" for options
+38: --- Testing volume of H-simplex10
+38: Number type: d
+36: Computed volume 8.16977e-13
+36: Expected volume = 8.20587e-13
+36: Relative error (expected) = 0.00439873
+36: Relative error (exact) = 0.135973
+36: ===============================================================================
+36: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+36: [doctest] assertions: 8 | 8 passed | 0 failed |
+36: [doctest] Status: SUCCESS!
+37/82 Test #36: volume_cg_hpolytope_birkhoff .............................   Passed   20.97 sec
+test 39
+      Start 39: volume_cg_hpolytope_skinny_cube
+
+39: Test command: /home/geom/geomshu/volesti6/test/volume_cg_hpolytope "-tc=skinny_cube"
+39: Working Directory: /home/geom/geomshu/volesti6/test
+39: Test timeout computed to be: 10000000
+39: [doctest] doctest version is "2.4.9"
+39: [doctest] run with "--help" for options
+39: --- Testing volume of H-skinny_cube10
+39: ===============================================================================
+39: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+39: [doctest] assertions: 0 | 0 passed | 0 failed |
+39: [doctest] Status: SUCCESS!
+38/82 Test #39: volume_cg_hpolytope_skinny_cube ..........................   Passed    0.00 sec
+test 40
+      Start 40: volume_cg_vpolytope_cube
+
+40: Test command: /home/geom/geomshu/volesti6/test/volume_cg_vpolytope "-tc=cube"
+40: Working Directory: /home/geom/geomshu/volesti6/test
+40: Test timeout computed to be: 10000000
+40: [doctest] doctest version is "2.4.9"
+40: [doctest] run with "--help" for options
+40: --- Testing volume of V-cube2
+40: Number type: d
+38: Computed volume 2.14048e-07
+38: Expected volume = 2.14048e-07
+38: Relative error (expected) = 1.50419e-06
+38: Relative error (exact) = 0.223264
+38: Computed volume 2.58542e-07
+38: Expected volume = 2.70598e-07
+38: Relative error (expected) = 0.0445548
+38: Relative error (exact) = 0.0618044
+40: Computed volume 3.42147
+40: Expected volume = 3.88715
+40: Relative error (expected) = 0.119801
+40: Relative error (exact) = 0.144633
+38: Computed volume 2.5932e-07
+38: Expected volume = 2.53893e-07
+38: Relative error (expected) = 0.0213752
+38: Relative error (exact) = 0.0589796
+38: --- Testing volume of H-simplex20
+38: Number type: d
+40: Computed volume 4.04194
+40: Expected volume = 4.04324
+40: Relative error (expected) = 0.000321886
+40: Relative error (exact) = 0.0104846
+38: Computed volume 2.00646e-21
+38: Expected volume = 2.00646e-21
+38: Relative error (expected) = 3.06366e-07
+38: Relative error (exact) = 0.995118
+38: Computed volume 4.57044e-19
+38: Expected volume = 4.16845e-19
+38: Relative error (expected) = 0.0964373
+38: Relative error (exact) = 0.111944
+40: Computed volume 4.11322
+40: Expected volume = 4.33111
+40: Relative error (expected) = 0.0503074
+40: Relative error (exact) = 0.0283057
+40: --- Testing volume of V-cube4
+40: Number type: d
+38: Computed volume 4.28323e-19
+38: Expected volume = 3.79918e-19
+38: Relative error (expected) = 0.12741
+38: Relative error (exact) = 0.0420687
+38: --- Testing volume of H-simplex30
+38: Number type: d
+40: Computed volume 24.8598
+40: Expected volume = 24.8598
+40: Relative error (expected) = 6.24575e-07
+40: Relative error (exact) = 0.553737
+40: Computed volume 13.0482
+40: Expected volume = 15.4739
+40: Relative error (expected) = 0.156761
+40: Relative error (exact) = 0.184487
+38: Computed volume 2.31348e-35
+38: Expected volume = 2.31348e-35
+38: Relative error (expected) = 1.90562e-06
+38: Relative error (exact) = 0.993863
+38: Computed volume 4.0693e-33
+38: Expected volume = 4.02288e-33
+38: Relative error (expected) = 0.0115387
+38: Relative error (exact) = 0.0793931
+40: Computed volume 17.8771
+40: Expected volume = 15.1616
+40: Relative error (expected) = 0.179101
+40: Relative error (exact) = 0.117316
+40: ===============================================================================
+40: [doctest] test cases: 1 | 1 passed | 0 failed | 1 skipped
+40: [doctest] assertions: 6 | 6 passed | 0 failed |
+40: [doctest] Status: SUCCESS!
+39/82 Test #40: volume_cg_vpolytope_cube .................................   Passed   13.04 sec
+test 41
+      Start 41: volume_cg_vpolytope_cross
+
+41: Test command: /home/geom/geomshu/volesti6/test/volume_cg_vpolytope "-tc=cross"
+41: Working Directory: /home/geom/geomshu/volesti6/test
+41: Test timeout computed to be: 10000000
+41: [doctest] doctest version is "2.4.9"
+41: [doctest] run with "--help" for options
+41: --- Testing volume of V-cross5
+41: Number type: d
+41: Computed volume 0.239694
+41: Expected volume = 0.239694
+41: Relative error (expected) = 2.55036e-07
+41: Relative error (exact) = 0.101147
+41: Computed volume 0.353566
+41: Expected volume = 0.353566
+41: Relative error (expected) = 4.35275e-07
+41: Relative error (exact) = 0.325873
+41: Computed volume 0.287659
+41: Expected volume = 0.254434
+41: Relative error (expected) = 0.130585
+41: Relative error (exact) = 0.0787224
+41: ===============================================================================
+41: [doctest] test cases: 1 | 1 passed | 0 failed | 1 skipped
+41: [doctest] assertions: 3 | 3 passed | 0 failed |
+41: [doctest] Status: SUCCESS!
+40/82 Test #41: volume_cg_vpolytope_cross ................................   Passed    4.08 sec
+test 42
+      Start 42: volume_cg_vpolytope_simplex
+
+42: Test command: /home/geom/geomshu/volesti6/test/volume_cg_vpolytope "-tc=simplex"
+42: Working Directory: /home/geom/geomshu/volesti6/test
+42: Test timeout computed to be: 10000000
+42: [doctest] doctest version is "2.4.9"
+42: [doctest] run with "--help" for options
+42: ===============================================================================
+42: [doctest] test cases: 0 | 0 passed | 0 failed | 2 skipped
+42: [doctest] assertions: 0 | 0 passed | 0 failed |
+42: [doctest] Status: SUCCESS!
+41/82 Test #42: volume_cg_vpolytope_simplex ..............................   Passed    0.00 sec
+test 43
+      Start 43: volume_cb_hpolytope_cube
+
+43: Test command: /home/geom/geomshu/volesti6/test/volume_cb_hpolytope "-tc=cube"
+43: Working Directory: /home/geom/geomshu/volesti6/test
+43: Test timeout computed to be: 10000000
+43: [doctest] doctest version is "2.4.9"
+43: [doctest] run with "--help" for options
+43: --- Testing volume of H-cube10
+43: Number type: d
+43: Computed volume 1092.09
+43: Expected volume = 1118.63
+43: Relative error (expected) = 0.0237284
+43: Relative error (exact) = 0.0664909
+43: Computed volume 1060.98
+43: Expected volume = 1163.36
+43: Relative error (expected) = 0.0880028
+43: Relative error (exact) = 0.0361143
+43: Computed volume 1110.3
+43: Expected volume = 1119.15
+43: Relative error (expected) = 0.0079035
+43: Relative error (exact) = 0.084282
+43: Computed volume 1102.25
+43: Expected volume = 1100.73
+43: Relative error (expected) = 0.00137887
+43: Relative error (exact) = 0.0764138
+43: --- Testing volume of H-cube20
+43: Number type: d
+43: Computed volume 956389
+43: Expected volume = 965744
+43: Relative error (expected) = 0.00968665
+43: Relative error (exact) = 0.0879162
+43: Computed volume 982563
+43: Expected volume = 1.05123e+06
+43: Relative error (expected) = 0.0653209
+43: Relative error (exact) = 0.0629552
+43: Computed volume 922887
+43: Expected volume = 1.00647e+06
+43: Relative error (expected) = 0.0830459
+43: Relative error (exact) = 0.119867
+43: Computed volume 995298
+43: Expected volume = 1.00702e+06
+43: Relative error (expected) = 0.0116402
+43: Relative error (exact) = 0.0508098
+43: ===============================================================================
+43: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+43: [doctest] assertions: 8 | 8 passed | 0 failed |
+43: [doctest] Status: SUCCESS!
+42/82 Test #43: volume_cb_hpolytope_cube .................................   Passed    0.20 sec
+test 44
+      Start 44: volume_cb_hpolytope_cross
+
+44: Test command: /home/geom/geomshu/volesti6/test/volume_cb_hpolytope "-tc=cross"
+44: Working Directory: /home/geom/geomshu/volesti6/test
+44: Test timeout computed to be: 10000000
+44: [doctest] doctest version is "2.4.9"
+44: [doctest] run with "--help" for options
+44: --- Testing volume of H-cross10
+44: Number type: d
+44: Computed volume 0.000306295
+44: Expected volume = 0.000291034
+44: Relative error (expected) = 0.0524355
+44: Relative error (exact) = 0.0854313
+44: Computed volume 0.000289388
+44: Expected volume = 0.000281135
+44: Relative error (expected) = 0.0293547
+44: Relative error (exact) = 0.0255176
+44: Computed volume 0.000307491
+44: Expected volume = 0.000294805
+44: Relative error (expected) = 0.0430323
+44: Relative error (exact) = 0.0896719
+44: Computed volume 0.000291618
+44: Expected volume = 0.000286491
+44: Relative error (expected) = 0.0178949
+44: Relative error (exact) = 0.0334205
+44: ===============================================================================
+44: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+44: [doctest] assertions: 4 | 4 passed | 0 failed |
+44: [doctest] Status: SUCCESS!
+43/82 Test #44: volume_cb_hpolytope_cross ................................   Passed    0.97 sec
+test 45
+      Start 45: volume_cb_hpolytope_birkhoff
+
+45: Test command: /home/geom/geomshu/volesti6/test/volume_cb_hpolytope "-tc=birk"
+45: Working Directory: /home/geom/geomshu/volesti6/test
+45: Test timeout computed to be: 10000000
+45: [doctest] doctest version is "2.4.9"
+45: [doctest] run with "--help" for options
+45: --- Testing volume of H-birk3
+45: Number type: d
+45: Computed volume 0.125674
+45: Expected volume = 0.125548
+45: Relative error (expected) = 0.000999805
+45: Relative error (exact) = 0.00538819
+45: Computed volume 0.110981
+45: Expected volume = 0.113241
+45: Relative error (expected) = 0.0199595
+45: Relative error (exact) = 0.112154
+45: Computed volume 0.108596
+45: Expected volume = 0.112446
+45: Relative error (expected) = 0.0342353
+45: Relative error (exact) = 0.131229
+45: --- Testing volume of H-birk4
+45: Number type: d
+45: Computed volume 0.0008604
+45: Expected volume = 0.00109593
+45: Relative error (expected) = 0.214914
+45: Relative error (exact) = 0.113007
+45: Computed volume 0.000884399
+45: Expected volume = 0.00108152
+45: Relative error (expected) = 0.182263
+45: Relative error (exact) = 0.0882655
+45: Computed volume 0.000912338
+45: Expected volume = 0.000845192
+45: Relative error (expected) = 0.079445
+45: Relative error (exact) = 0.0594625
+45: --- Testing volume of H-birk5
+45: Number type: d
+45: Computed volume 2.16486e-07
+45: Expected volume = 1.73729e-07
+45: Relative error (expected) = 0.246116
+45: Relative error (exact) = 0.0378382
+38: Computed volume 3.93922e-33
+38: Expected volume = 3.47743e-33
+38: Relative error (expected) = 0.132797
+38: Relative error (exact) = 0.04489
+38: ===============================================================================
+38: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+38: [doctest] assertions: 9 | 9 passed | 0 failed |
+38: [doctest] Status: SUCCESS!
+44/82 Test #38: volume_cg_hpolytope_simplex ..............................   Passed   18.63 sec
+test 46
+      Start 46: volume_cb_hpolytope_prod_simplex
+
+46: Test command: /home/geom/geomshu/volesti6/test/volume_cb_hpolytope "-tc=prod_simplex"
+46: Working Directory: /home/geom/geomshu/volesti6/test
+46: Test timeout computed to be: 10000000
+46: [doctest] doctest version is "2.4.9"
+46: [doctest] run with "--help" for options
+46: --- Testing volume of H-prod_simplex5
+46: Number type: d
+46: Computed volume 6.97656e-05
+46: Expected volume = 6.40072e-05
+46: Relative error (expected) = 0.0899646
+46: Relative error (exact) = 0.00462437
+46: Computed volume 6.62786e-05
+46: Expected volume = 6.69062e-05
+46: Relative error (expected) = 0.00938068
+46: Relative error (exact) = 0.0455885
+46: Computed volume 7.34139e-05
+46: Expected volume = 6.20744e-05
+46: Relative error (expected) = 0.182675
+46: Relative error (exact) = 0.0571595
+46: Computed volume 6.5947e-05
+46: Expected volume = 6.31986e-05
+46: Relative error (expected) = 0.0434877
+46: Relative error (exact) = 0.0503638
+46: --- Testing volume of H-prod_simplex10
+46: Number type: d
+46: Computed volume 5.32259e-14
+46: Expected volume = 6.83631e-14
+46: Relative error (expected) = 0.221424
+46: Relative error (exact) = 0.299112
+46: Computed volume 8.5011e-14
+46: Expected volume = 8.19581e-14
+46: Relative error (expected) = 0.0372501
+46: Relative error (exact) = 0.119442
+46: Computed volume 7.52589e-14
+46: Expected volume = 9.35005e-14
+46: Relative error (expected) = 0.195096
+46: Relative error (exact) = 0.00897611
+45: Computed volume 2.26005e-07
+45: Expected volume = 1.39042e-07
+45: Relative error (expected) = 0.625446
+45: Relative error (exact) = 0.00446788
+46: Computed volume 7.74301e-14
+46: Expected volume = 6.57309e-14
+46: Relative error (expected) = 0.177986
+46: Relative error (exact) = 0.019614
+46: --- Testing volume of H-prod_simplex15
+46: Number type: d
+46: Computed volume 3.85153e-25
+46: Expected volume = 3.85153e-25
+46: Relative error (expected) = 8.6892e-07
+46: Relative error (exact) = 0.341384
+46: Computed volume 5.19882e-25
+46: Expected volume = 9.33162e-25
+46: Relative error (expected) = 0.442881
+46: Relative error (exact) = 0.110995
+46: Computed volume 4.90706e-25
+46: Expected volume = 3.95891e-25
+46: Relative error (expected) = 0.239498
+46: Relative error (exact) = 0.160886
+45: Computed volume 2.81101e-07
+45: Expected volume = 3.24308e-07
+45: Relative error (expected) = 0.133229
+45: Relative error (exact) = 0.249337
+45: --- Testing volume of H-birk6
+45: Number type: d
+45: Computed volume 7.27437e-13
+45: Expected volume = 6.10783e-13
+45: Relative error (expected) = 0.190991
+45: Relative error (exact) = 0.23067
+46: Computed volume 6.0693e-25
+46: Expected volume = 5.72542e-25
+46: Relative error (expected) = 0.0600624
+46: Relative error (exact) = 0.0378581
+46: ===============================================================================
+46: [doctest] test cases:  1 |  1 passed | 0 failed | 5 skipped
+46: [doctest] assertions: 12 | 12 passed | 0 failed |
+46: [doctest] Status: SUCCESS!
+45/82 Test #46: volume_cb_hpolytope_prod_simplex .........................   Passed    1.34 sec
+test 47
+      Start 47: volume_cb_hpolytope_simplex
+
+47: Test command: /home/geom/geomshu/volesti6/test/volume_cb_hpolytope "-tc=simplex"
+47: Working Directory: /home/geom/geomshu/volesti6/test
+47: Test timeout computed to be: 10000000
+47: [doctest] doctest version is "2.4.9"
+47: [doctest] run with "--help" for options
+47: --- Testing volume of H-simplex10
+47: Number type: d
+47: Computed volume 3.90133e-07
+47: Expected volume = 3.90133e-07
+47: Relative error (expected) = 6.03668e-07
+47: Relative error (exact) = 0.415714
+47: Computed volume 3.0417e-07
+47: Expected volume = 2.90617e-07
+47: Relative error (expected) = 0.0466351
+47: Relative error (exact) = 0.103772
+47: Computed volume 3.55006e-07
+47: Expected volume = 2.93392e-07
+47: Relative error (expected) = 0.210006
+47: Relative error (exact) = 0.288246
+47: Computed volume 3.05323e-07
+47: Expected volume = 3.00286e-07
+47: Relative error (expected) = 0.0167743
+47: Relative error (exact) = 0.107956
+47: --- Testing volume of H-simplex20
+47: Number type: d
+47: Computed volume 6.52535e-19
+47: Expected volume = 6.52535e-19
+47: Relative error (expected) = 3.67013e-07
+47: Relative error (exact) = 0.587553
+47: Computed volume 4.13341e-19
+47: Expected volume = 4.14182e-19
+47: Relative error (expected) = 0.00202994
+47: Relative error (exact) = 0.00561872
+47: Computed volume 4.43975e-19
+47: Expected volume = 4.5877e-19
+47: Relative error (expected) = 0.0322497
+47: Relative error (exact) = 0.0801471
+47: Computed volume 3.82222e-19
+47: Expected volume = 4.54245e-19
+47: Relative error (expected) = 0.158555
+47: Relative error (exact) = 0.0700914
+47: --- Testing volume of H-simplex30
+47: Number type: d
+45: Computed volume 2.7408e-13
+45: Expected volume = 2.7408e-13
+45: Relative error (expected) = 1.48642e-06
+45: Relative error (exact) = 0.710136
+47: Computed volume 2.70368e-33
+47: Expected volume = 2.5776e-33
+47: Relative error (expected) = 0.0489148
+47: Relative error (exact) = 0.28284
+47: Computed volume 3.72868e-33
+47: Expected volume = 3.5157e-33
+47: Relative error (expected) = 0.060579
+47: Relative error (exact) = 0.0109576
+47: Computed volume 4.34597e-33
+47: Expected volume = 2.74483e-33
+47: Relative error (expected) = 0.583328
+47: Relative error (exact) = 0.15278
+47: Computed volume 3.26746e-33
+47: Expected volume = 3.08769e-33
+47: Relative error (expected) = 0.0582215
+47: Relative error (exact) = 0.133297
+47: ===============================================================================
+47: [doctest] test cases:  1 |  1 passed | 0 failed | 5 skipped
+47: [doctest] assertions: 12 | 12 passed | 0 failed |
+47: [doctest] Status: SUCCESS!
+46/82 Test #47: volume_cb_hpolytope_simplex ..............................   Passed    1.32 sec
+test 48
+      Start 48: volume_cb_hpolytope_skinny_cube
+
+48: Test command: /home/geom/geomshu/volesti6/test/volume_cb_hpolytope "-tc=skinny_cube"
+48: Working Directory: /home/geom/geomshu/volesti6/test
+48: Test timeout computed to be: 10000000
+48: [doctest] doctest version is "2.4.9"
+48: [doctest] run with "--help" for options
+48: --- Testing volume of H-skinny_cube10
+48: ===============================================================================
+48: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+48: [doctest] assertions: 0 | 0 passed | 0 failed |
+48: [doctest] Status: SUCCESS!
+47/82 Test #48: volume_cb_hpolytope_skinny_cube ..........................   Passed    0.00 sec
+test 49
+      Start 49: volume_cb_vpolytope_cube
+
+49: Test command: /home/geom/geomshu/volesti6/test/volume_cb_vpolytope "-tc=cube"
+49: Working Directory: /home/geom/geomshu/volesti6/test
+49: Test timeout computed to be: 10000000
+49: [doctest] doctest version is "2.4.9"
+49: [doctest] run with "--help" for options
+49: --- Testing volume of V-cube2
+49: Number type: d
+49: Computed volume 4.4286
+49: Expected volume = 4.43443
+49: Relative error (expected) = 0.00131534
+49: Relative error (exact) = 0.107149
+49: Computed volume 4.02131
+49: Expected volume = 4.129
+49: Relative error (expected) = 0.0260807
+49: Relative error (exact) = 0.00532822
+45: Computed volume 1.01884e-12
+45: Expected volume = 6.62349e-13
+45: Relative error (expected) = 0.538218
+45: Relative error (exact) = 0.0775121
+45: ===============================================================================
+45: [doctest] test cases:  1 |  1 passed | 0 failed | 5 skipped
+45: [doctest] assertions: 12 | 12 passed | 0 failed |
+45: [doctest] Status: SUCCESS!
+48/82 Test #45: volume_cb_hpolytope_birkhoff .............................   Passed    4.80 sec
+test 50
+      Start 50: volume_cb_vpolytope_cross
+
+50: Test command: /home/geom/geomshu/volesti6/test/volume_cb_vpolytope "-tc=cross"
+50: Working Directory: /home/geom/geomshu/volesti6/test
+50: Test timeout computed to be: 10000000
+50: [doctest] doctest version is "2.4.9"
+50: [doctest] run with "--help" for options
+50: --- Testing volume of V-cross5
+50: Number type: d
+49: Computed volume 4.41407
+49: Expected volume = 4.43443
+49: Relative error (expected) = 0.00459056
+49: Relative error (exact) = 0.103518
+50: Computed volume 0.274799
+50: Expected volume = 0.28425
+50: Relative error (expected) = 0.0332491
+50: Relative error (exact) = 0.030496
+49: Computed volume 4.32045
+49: Expected volume = 4.40191
+49: Relative error (expected) = 0.0185046
+49: Relative error (exact) = 0.0801136
+49: --- Testing volume of V-cube5
+49: Number type: d
+50: Computed volume 0.273051
+50: Expected volume = 0.273255
+50: Relative error (expected) = 0.000746824
+50: Relative error (exact) = 0.023941
+49: Computed volume 35.8128
+49: Expected volume = 32
+49: Relative error (expected) = 0.119149
+49: Relative error (exact) = 0.119149
+50: Computed volume 0.27562
+50: Expected volume = 0.28413
+50: Relative error (expected) = 0.0299524
+50: Relative error (exact) = 0.0335736
+49: Computed volume 33.2377
+49: Expected volume = 32
+49: Relative error (expected) = 0.0386784
+49: Relative error (exact) = 0.0386784
+50: Computed volume 0.278685
+50: Expected volume = 0.286071
+50: Relative error (expected) = 0.0258199
+50: Relative error (exact) = 0.0450676
+50: --- Testing volume of V-cross10
+50: Number type: d
+49: Computed volume 35.8286
+49: Expected volume = 32
+49: Relative error (expected) = 0.119643
+49: Relative error (exact) = 0.119643
+50: Computed volume 0.000306295
+50: Expected volume = 0.000283841
+50: Relative error (expected) = 0.0791059
+50: Relative error (exact) = 0.0854313
+50: Computed volume 0.000289388
+50: Expected volume = 0.00031188
+50: Relative error (expected) = 0.0721187
+50: Relative error (exact) = 0.0255176
+49: Computed volume 35.4056
+49: Expected volume = 32
+49: Relative error (expected) = 0.106425
+49: Relative error (exact) = 0.106425
+49: ===============================================================================
+49: [doctest] test cases: 1 | 1 passed | 0 failed | 2 skipped
+49: [doctest] assertions: 8 | 8 passed | 0 failed |
+49: [doctest] Status: SUCCESS!
+49/82 Test #49: volume_cb_vpolytope_cube .................................   Passed   12.72 sec
+test 51
+      Start 51: volume_cb_vpolytope_simplex
+
+51: Test command: /home/geom/geomshu/volesti6/test/volume_cb_vpolytope "-tc=simplex"
+51: Working Directory: /home/geom/geomshu/volesti6/test
+51: Test timeout computed to be: 10000000
+51: [doctest] doctest version is "2.4.9"
+51: [doctest] run with "--help" for options
+51: --- Testing volume of V-simplex5
+51: Number type: d
+51: Computed volume 0.00862129
+51: Expected volume = 0.00846587
+51: Relative error (expected) = 0.0183585
+51: Relative error (exact) = 0.0345548
+50: Computed volume 0.000307906
+50: Expected volume = 0.000284841
+50: Relative error (expected) = 0.0809734
+50: Relative error (exact) = 0.0911405
+51: Computed volume 0.00928001
+51: Expected volume = 0.0096107
+51: Relative error (expected) = 0.0344087
+51: Relative error (exact) = 0.113601
+51: Computed volume 0.0088914
+51: Expected volume = 0.00842591
+51: Relative error (expected) = 0.0552455
+51: Relative error (exact) = 0.0669684
+50: Computed volume 0.000291618
+50: Expected volume = 0.00027759
+50: Relative error (expected) = 0.050534
+50: Relative error (exact) = 0.0334205
+50: --- Testing volume of V-cross20
+50: Number type: d
+51: Computed volume 0.00860877
+51: Expected volume = 0.00855401
+51: Relative error (expected) = 0.00640204
+51: Relative error (exact) = 0.0330528
+51: --- Testing volume of V-simplex10
+51: Number type: d
+51: Computed volume 2.32759e-07
+51: Expected volume = 2.35669e-07
+51: Relative error (expected) = 0.0123466
+51: Relative error (exact) = 0.155363
+50: Computed volume 3.99425e-13
+50: Expected volume = 4.16807e-13
+50: Relative error (expected) = 0.0417019
+50: Relative error (exact) = 0.0732548
+51: Computed volume 2.82581e-07
+51: Expected volume = 3.00778e-07
+51: Relative error (expected) = 0.0604982
+51: Relative error (exact) = 0.0254317
+51: Computed volume 2.54152e-07
+51: Expected volume = 3.0366e-07
+51: Relative error (expected) = 0.163038
+51: Relative error (exact) = 0.0777337
+50: Computed volume 4.45855e-13
+50: Expected volume = 4.42692e-13
+50: Relative error (expected) = 0.00714419
+50: Relative error (exact) = 0.0344703
+50: Computed volume 3.90936e-13
+50: Expected volume = 4.19453e-13
+50: Relative error (expected) = 0.0679866
+50: Relative error (exact) = 0.0929523
+51: Computed volume 2.50521e-07
+51: Expected volume = 2.72952e-07
+51: Relative error (expected) = 0.0821804
+51: Relative error (exact) = 0.0909105
+51: ===============================================================================
+51: [doctest] test cases: 1 | 1 passed | 0 failed | 2 skipped
+51: [doctest] assertions: 8 | 8 passed | 0 failed |
+51: [doctest] Status: SUCCESS!
+50/82 Test #51: volume_cb_vpolytope_simplex ..............................   Passed   44.61 sec
+test 52
+      Start 52: volume_cb_zonotopes_uniform_zonotopes
+
+52: Test command: /home/geom/geomshu/volesti6/test/volume_cb_zonotopes "-tc=uniform_zonotopes"
+52: Working Directory: /home/geom/geomshu/volesti6/test
+52: Test timeout computed to be: 10000000
+52: [doctest] doctest version is "2.4.9"
+52: [doctest] run with "--help" for options
+52: Number type: d
+52: Computed volume 1.189e+11
+52: Expected volume = 1.13244e+11
+52: Relative error (expected) = 0.0499462
+52: Relative error (exact) = 0.0499462
+52: Computed volume 1.15474e+11
+52: Expected volume = 1.13244e+11
+52: Relative error (expected) = 0.0196897
+52: Relative error (exact) = 0.0196897
+52: Computed volume 1.06685e+11
+52: Expected volume = 1.13244e+11
+52: Relative error (expected) = 0.0579179
+52: Relative error (exact) = 0.0579179
+52: Number type: d
+52: Computed volume 1.12147e+11
+52: Expected volume = 1.13244e+11
+52: Relative error (expected) = 0.00969006
+52: Relative error (exact) = 0.00969006
+52: Computed volume 1.07192e+11
+52: Expected volume = 1.13244e+11
+52: Relative error (expected) = 0.0534391
+52: Relative error (exact) = 0.0534391
+52: Computed volume 1.07487e+11
+52: Expected volume = 1.13244e+11
+52: Relative error (expected) = 0.05084
+52: Relative error (exact) = 0.05084
+50: Computed volume 3.9665e-13
+50: Expected volume = 4.63423e-13
+50: Relative error (expected) = 0.144087
+50: Relative error (exact) = 0.0796951
+50: ===============================================================================
+50: [doctest] test cases:  1 |  1 passed | 0 failed | 2 skipped
+50: [doctest] assertions: 12 | 12 passed | 0 failed |
+50: [doctest] Status: SUCCESS!
+51/82 Test #50: volume_cb_vpolytope_cross ................................   Passed   66.82 sec
+test 53
+      Start 53: volume_cb_vpoly_intersection_vpoly_random_vpoly_sphere
+
+53: Test command: /home/geom/geomshu/volesti6/test/volume_cb_vpoly_intersection_vpoly "-tc=random_vpoly_sphere"
+53: Working Directory: /home/geom/geomshu/volesti6/test
+53: Test timeout computed to be: 10000000
+53: [doctest] doctest version is "2.4.9"
+53: [doctest] run with "--help" for options
+53: --- Testing volume VP1-5-10 , VP2-5-12
+53: Number type: d
+53: Computed volume 0.012363
+53: Expected volume = 0.0119774
+53: Relative error (expected) = 0.0321907
+53: Relative error (exact) = 0.135596
+53: Computed volume 0.0134033
+53: Expected volume = 0.0136065
+53: Relative error (expected) = 0.0149371
+53: Relative error (exact) = 0.06286
+53: Computed volume 0.01398
+53: Expected volume = 0.013812
+53: Relative error (expected) = 0.0121664
+53: Relative error (exact) = 0.0225319
+53: Computed volume 0.0125295
+53: Expected volume = 0.0119665
+53: Relative error (expected) = 0.0470455
+53: Relative error (exact) = 0.123954
+53: ===============================================================================
+53: [doctest] test cases: 1 | 1 passed | 0 failed | 0 skipped
+53: [doctest] assertions: 4 | 4 passed | 0 failed |
+53: [doctest] Status: SUCCESS!
+52/82 Test #53: volume_cb_vpoly_intersection_vpoly_random_vpoly_sphere ...   Passed    9.67 sec
+test 54
+      Start 54: test_round_min_ellipsoid
+
+54: Test command: /home/geom/geomshu/volesti6/test/new_rounding_test "-tc=round_min_ellipsoid"
+54: Working Directory: /home/geom/geomshu/volesti6/test
+54: Test timeout computed to be: 10000000
+54: [doctest] doctest version is "2.4.9"
+54: [doctest] run with "--help" for options
+54: 
+54: --- Testing rounding of H-skinny_cube5
+54: Number type: d
+54: Computed volume 3071.67
+54: Expected volume = 3070.64
+54: Relative error (expected) = 0.000336825
+54: Relative error (exact) = 0.0401018
+54: Computed volume 3129.59
+54: Expected volume = 3188.25
+54: Relative error (expected) = 0.0183995
+54: Relative error (exact) = 0.0220038
+54: Computed volume 3163.97
+54: Expected volume = 3140.6
+54: Relative error (expected) = 0.00744021
+54: Relative error (exact) = 0.0112604
+54: 
+54: --- Testing rounding of H-skinny_cube10
+54: Number type: d
+54: Computed volume 102149
+54: Expected volume = 122550
+54: Relative error (expected) = 0.166472
+54: Relative error (exact) = 0.00245223
+54: Computed volume 94487.6
+54: Expected volume = 108426
+54: Relative error (expected) = 0.128552
+54: Relative error (exact) = 0.0772695
+54: Computed volume 97672.9
+54: Expected volume = 105003
+54: Relative error (expected) = 0.0698087
+54: Relative error (exact) = 0.0461633
+54: ===============================================================================
+54: [doctest] test cases: 1 | 1 passed | 0 failed | 2 skipped
+54: [doctest] assertions: 6 | 6 passed | 0 failed |
+54: [doctest] Status: SUCCESS!
+53/82 Test #54: test_round_min_ellipsoid .................................   Passed    0.04 sec
+test 55
+      Start 55: test_round_max_ellipsoid
+
+55: Test command: /home/geom/geomshu/volesti6/test/new_rounding_test "-tc=round_max_ellipsoid"
+55: Working Directory: /home/geom/geomshu/volesti6/test
+55: Test timeout computed to be: 10000000
+55: [doctest] doctest version is "2.4.9"
+55: [doctest] run with "--help" for options
+55: 
+55: --- Testing rounding of H-skinny_cube5
+55: Number type: d
+55: Computed volume 3262.77
+55: Expected volume = 3140.6
+55: Relative error (expected) = 0.0388998
+55: Relative error (exact) = 0.0196153
+55: ===============================================================================
+55: [doctest] test cases: 1 | 1 passed | 0 failed | 2 skipped
+55: [doctest] assertions: 1 | 1 passed | 0 failed |
+55: [doctest] Status: SUCCESS!
+54/82 Test #55: test_round_max_ellipsoid .................................   Passed    0.01 sec
+test 56
+      Start 56: test_round_svd
+
+56: Test command: /home/geom/geomshu/volesti6/test/new_rounding_test "-tc=round_svd"
+56: Working Directory: /home/geom/geomshu/volesti6/test
+56: Test timeout computed to be: 10000000
+56: [doctest] doctest version is "2.4.9"
+56: [doctest] run with "--help" for options
+56: 
+56: --- Testing rounding of H-skinny_cube5
+56: Number type: d
+56: Computed volume 3160.01
+56: Expected volume = 3140.6
+56: Relative error (expected) = 0.00617984
+56: Relative error (exact) = 0.0124974
+56: ===============================================================================
+56: [doctest] test cases: 1 | 1 passed | 0 failed | 2 skipped
+56: [doctest] assertions: 1 | 1 passed | 0 failed |
+56: [doctest] Status: SUCCESS!
+55/82 Test #56: test_round_svd ...........................................   Passed    0.00 sec
+test 57
+      Start 57: logconcave_sampling_test_hmc
+
+57: Test command: /home/geom/geomshu/volesti6/test/logconcave_sampling_test "-tc=hmc"
+57: Working Directory: /home/geom/geomshu/volesti6/test
+57: Test timeout computed to be: 10000000
+57: [doctest] doctest version is "2.4.9"
+57: [doctest] run with "--help" for options
+57: --- Testing Hamiltonian Monte Carlo
+57: Dimensionality: 10
+57: Target ergodic mean norm: 0
+57: Error (relative if possible) after 75000 samples: 0.0125882
+57: ETA (us): 71430
+57: 
+57: ===============================================================================
+57: [doctest] test cases: 1 | 1 passed | 0 failed | 9 skipped
+57: [doctest] assertions: 1 | 1 passed | 0 failed |
+57: [doctest] Status: SUCCESS!
+56/82 Test #57: logconcave_sampling_test_hmc .............................   Passed    0.08 sec
+test 58
+      Start 58: logconcave_sampling_test_uld
+
+58: Test command: /home/geom/geomshu/volesti6/test/logconcave_sampling_test "-tc=uld"
+58: Working Directory: /home/geom/geomshu/volesti6/test
+58: Test timeout computed to be: 10000000
+58: [doctest] doctest version is "2.4.9"
+58: [doctest] run with "--help" for options
+58: --- Testing Underdamped Langevin Diffusion
+58: Dimensionality: 5
+58: Target ergodic mean norm: 0
+58: Error (relative if possible) after 75000 samples: 0.000114167
+58: ETA (us): 244097
+58: 
+58: ===============================================================================
+58: [doctest] test cases: 1 | 1 passed | 0 failed | 9 skipped
+58: [doctest] assertions: 1 | 1 passed | 0 failed |
+58: [doctest] Status: SUCCESS!
+57/82 Test #58: logconcave_sampling_test_uld .............................   Passed    0.25 sec
+test 59
+      Start 59: logconcave_sampling_test_exponential_biomass_sampling
+
+59: Test command: /home/geom/geomshu/volesti6/test/logconcave_sampling_test "-tc=exponential_biomass_sampling"
+59: Working Directory: /home/geom/geomshu/volesti6/test
+59: Test timeout computed to be: 10000000
+59: [doctest] doctest version is "2.4.9"
+59: [doctest] run with "--help" for options
+59: Model: e_coli
+59: Dimension of e_coli: 24
+59: Warm start
+59: Burn-in
+59: ..........
+59: Sampling
+52: Number type: d
+52: Computed volume 6.95342e+20
+52: Expected volume = 6.95342e+20
+52: Relative error (expected) = 2.36198e-07
+52: Relative error (exact) = 0.0778302
+52: Computed volume 6.98637e+20
+52: Expected volume = 7.27889e+20
+52: Relative error (expected) = 0.040188
+52: Relative error (exact) = 0.0829369
+52: Computed volume 7.18605e+20
+52: Expected volume = 7.18605e+20
+52: Relative error (expected) = 4.05789e-07
+52: Relative error (exact) = 0.11389
+52: Number type: d
+52: Computed volume 3.42945e+20
+52: Expected volume = 3.42945e+20
+52: Relative error (expected) = 4.15062e-07
+52: Relative error (exact) = 0.46841
+52: Computed volume 4.68065e+20
+52: Expected volume = 4.68065e+20
+52: Relative error (expected) = 4.65377e-07
+52: Relative error (exact) = 0.274466
+59: .....................................................................Min biomass Value: -99.8968
+59: Argmin: -145.153  14.1364 -313.684  125.608 -194.654  -77.141 -160.199 -83.0652  84.3281 -36.9734   28.135  155.445  186.821  10.0702 -152.915  241.874  195.694  190.855  82.7267  4.57567  108.301 -221.458 -147.927 -24.7772
+59: ETA: 1.05743e+07
+59: Time per Independent sample: 0.000103269
+59: Max PSRF: 1.00419
+59: Min ESS: 1092
+59: Average number of reflections: 1.7641
+59: Step size (final): 0.357003
+59: Discard Ratio: 0.1525
+59: Average Acceptance Probability: 0.817478
+59: 
+59: Warm start
+59: Burn-in
+59: ..........
+59: Sampling
+52: Computed volume 6.45698e+20
+52: Expected volume = 6.45698e+20
+52: Relative error (expected) = 5.30117e-07
+52: Relative error (exact) = 0.000877659
+52: ===============================================================================
+52: [doctest] test cases:  1 |  1 passed | 0 failed | 0 skipped
+52: [doctest] assertions: 12 | 12 passed | 0 failed |
+52: [doctest] Status: SUCCESS!
+58/82 Test #52: volume_cb_zonotopes_uniform_zonotopes ....................   Passed   37.43 sec
+test 60
+      Start 60: logconcave_sampling_test_nuts_hmc_truncated
+
+60: Test command: /home/geom/geomshu/volesti6/test/logconcave_sampling_test "-tc=benchmark_nuts_hmc_truncated"
+60: Working Directory: /home/geom/geomshu/volesti6/test
+60: Test timeout computed to be: 10000000
+60: [doctest] doctest version is "2.4.9"
+60: [doctest] run with "--help" for options
+60: eta0: 0.707107
+60: eta: 0.407677
+60: proportion of sucussfull steps: 0.841
+60: PSRF: 1.04191
+60: time: 1644
+60: 
+60: eta0: 0.353553
+60: eta: 0.552581
+60: proportion of sucussfull steps: 0.589
+60: PSRF: 1.02187
+60: time: 4435
+60: 
+60: eta0: 0.235702
+60: eta: 0.381109
+60: proportion of sucussfull steps: 0.713
+60: PSRF: 1.06553
+60: time: 4614
+60: 
+60: eta0: 0.176777
+60: eta: 0.403771
+60: proportion of sucussfull steps: 0.635
+60: PSRF: 1.09196
+60: time: 7617
+60: 
+60: eta0: 0.141421
+60: eta: 0.171359
+60: proportion of sucussfull steps: 0.903
+60: PSRF: 1.2533
+60: time: 12177
+60: 
+60: eta0: 0.117851
+60: eta: 0.581174
+60: proportion of sucussfull steps: 0.252
+60: PSRF: 1.07045
+60: time: 19710
+60: 
+60: eta0: 0.101015
+60: eta: 0.248742
+60: proportion of sucussfull steps: 0.768
+60: PSRF: 1.11397
+60: time: 12931
+60: 
+60: eta0: 0.0883883
+60: eta: 0.308931
+60: proportion of sucussfull steps: 0.66
+60: PSRF: 1.08317
+60: time: 21975
+60: 
+60: eta0: 0.0785674
+60: eta: 0.243609
+60: proportion of sucussfull steps: 0.758
+60: PSRF: 1.20789
+60: time: 18521
+60: 
+60: eta0: 0.0707107
+60: eta: 0.326185
+60: proportion of sucussfull steps: 0.587
+60: PSRF: 1.17631
+60: time: 27551
+60: 
+60: ===============================================================================
+60: [doctest] test cases: 1 | 1 passed | 0 failed | 9 skipped
+60: [doctest] assertions: 0 | 0 passed | 0 failed |
+60: [doctest] Status: SUCCESS!
+59/82 Test #60: logconcave_sampling_test_nuts_hmc_truncated ..............   Passed    0.58 sec
+test 61
+      Start 61: logconcave_sampling_test_nuts_hmc
+
+61: Test command: /home/geom/geomshu/volesti6/test/logconcave_sampling_test "-tc=benchmark_nuts_hmc"
+61: Working Directory: /home/geom/geomshu/volesti6/test
+61: Test timeout computed to be: 10000000
+61: [doctest] doctest version is "2.4.9"
+61: [doctest] run with "--help" for options
+61: eta: 0.899321
+61: proportion of sucussfull steps: 0.417
+61: PSRF: 1.01946
+61: time: 739
+61: 
+61: eta: 0.669878
+61: proportion of sucussfull steps: 0.635
+61: PSRF: 1.01698
+61: time: 1004
+61: 
+61: eta: 0.554205
+61: proportion of sucussfull steps: 0.75
+61: PSRF: 1.02917
+61: time: 1161
+61: 
+61: eta: 0.602121
+61: proportion of sucussfull steps: 0.639
+61: PSRF: 1.01855
+61: time: 1342
+61: 
+61: eta: 0.446017
+61: proportion of sucussfull steps: 0.824
+61: PSRF: 1.04328
+61: time: 1507
+61: 
+61: eta: 0.372417
+61: proportion of sucussfull steps: 0.884
+61: PSRF: 1.12894
+61: time: 1799
+61: 
+61: eta: 0.581399
+61: proportion of sucussfull steps: 0.547
+61: PSRF: 1.03242
+61: time: 2993
+61: 
+61: eta: 0.425359
+61: proportion of sucussfull steps: 0.805
+61: PSRF: 1.06798
+61: time: 3436
+61: 
+61: eta: 0.742666
+61: proportion of sucussfull steps: 0.148
+61: PSRF: 1.30044
+61: time: 3537
+61: 
+61: eta: 0.41309
+61: proportion of sucussfull steps: 0.807
+61: PSRF: 1.10267
+61: time: 2520
+61: 
+61: ===============================================================================
+61: [doctest] test cases: 1 | 1 passed | 0 failed | 9 skipped
+61: [doctest] assertions: 0 | 0 passed | 0 failed |
+61: [doctest] Status: SUCCESS!
+60/82 Test #61: logconcave_sampling_test_nuts_hmc ........................   Passed    0.04 sec
+test 62
+      Start 62: crhmc_sampling_test_crhmc
+
+62: Test command: /home/geom/geomshu/volesti6/test/crhmc_sampling_test "-tc=crhmc"
+62: Working Directory: /home/geom/geomshu/volesti6/test
+62: Test timeout computed to be: 10000000
+62: [doctest] doctest version is "2.4.9"
+62: [doctest] run with "--help" for options
+62: --- Testing Constrained Riemannian Hamiltonian Monte Carlo
+62: ------------SIMDLEN=1-------------------
+62: 
+62: Dimensionality: 10
+62: Target ergodic mean norm: 0
+62: Error (relative if possible) after 75000 samples: 0.000472248
+62: ETA (us): 909539
+62: 
+62: ------------SIMDLEN=4-------------------
+62: 
+62: Dimensionality: 10
+62: Target ergodic mean norm: 0
+62: Error (relative if possible) after 75000 samples: 0
+62: ETA (us): 402823
+62: 
+62: ===============================================================================
+62: [doctest] test cases: 1 | 1 passed | 0 failed | 3 skipped
+62: [doctest] assertions: 2 | 2 passed | 0 failed |
+62: [doctest] Status: SUCCESS!
+61/82 Test #62: crhmc_sampling_test_crhmc ................................   Passed    1.31 sec
+test 63
+      Start 63: crhmc_test_polytope_sampling
+
+63: Test command: /home/geom/geomshu/volesti6/test/crhmc_sampling_test "-tc=test_polytope_sampling_crhmc"
+63: Working Directory: /home/geom/geomshu/volesti6/test
+63: Test timeout computed to be: 10000000
+63: [doctest] doctest version is "2.4.9"
+63: [doctest] run with "--help" for options
+63: ------------SIMDLEN=1-------------------
+63: 
+63:  ---Sampling polytopes 
+63: 100_skinny_cube
+63: Constrained Riemannian Hamiltonian Monte Carlo (Gaussian Density)
+63: Burn-in
+63: ....................
+63: Sampling
+59: .....................................................................Min biomass Value: -98.9284
+59: Argmin: -150.335   18.288 -315.231  124.862 -200.888 -77.9717 -156.666 -80.0814  85.2318 -36.2568   33.232  151.495  186.649  7.20334 -153.669  236.834  204.674  179.218  79.7436  6.51152  109.186 -218.709  -149.85 -24.7791
+59: ETA: 2.04929e+07
+59: Time per Independent sample: 0.000193481
+59: Max PSRF: 1.00201
+59: Min ESS: 3965
+59: Average number of reflections: 1.73315
+59: Step size (final): 0.34906
+59: Discard Ratio: 0.211362
+59: Average Acceptance Probability: 0.738814
+59: 
+59: ===============================================================================
+59: [doctest] test cases:  1 |  1 passed | 0 failed | 9 skipped
+59: [doctest] assertions: 48 | 48 passed | 0 failed |
+59: [doctest] Status: SUCCESS!
+62/82 Test #59: logconcave_sampling_test_exponential_biomass_sampling ....   Passed   32.60 sec
+test 64
+      Start 64: crhmc_test_sparse_sampling
+
+64: Test command: /home/geom/geomshu/volesti6/test/crhmc_sampling_test "-tc=test_sampling_sparse_problem"
+64: Working Directory: /home/geom/geomshu/volesti6/test
+64: Test timeout computed to be: 10000000
+64: [doctest] doctest version is "2.4.9"
+64: [doctest] run with "--help" for options
+64: ------------SIMDLEN=1-------------------
+64: 
+64:  ---Sampling sparse problems 
+64: Problem name: degen2
+63: ...........................................................
+63: Step size (final): 0.2
+63: Discard Ratio: 0.0466
+63: Average Acceptance Probability: 0.953805
+63: max_psrf: 1.00303
+63: 
+63: 5_cross
+63: Constrained Riemannian Hamiltonian Monte Carlo (Gaussian Density)
+63: Burn-in
+63: ....................
+63: Sampling
+63: ...........................................................
+63: Step size (final): 0.2
+63: Discard Ratio: 0.0097625
+63: Average Acceptance Probability: 0.990496
+63: max_psrf: 1.0015
+63: 
+63: 100_simplex
+63: Constrained Riemannian Hamiltonian Monte Carlo (Gaussian Density)
+63: Burn-in
+63: ....................
+63: Sampling
+63: ...........................................................
+63: Step size (final): 0.2
+63: Discard Ratio: 0.0631875
+63: Average Acceptance Probability: 0.936235
+63: max_psrf: 1.00514
+63: 
+63: 50_prod_simplex
+63: Constrained Riemannian Hamiltonian Monte Carlo (Gaussian Density)
+63: Burn-in
+63: ....................
+63: Sampling
+63: ...........................................................
+63: Step size (final): 0.2
+63: Discard Ratio: 0.0651625
+63: Average Acceptance Probability: 0.935534
+63: max_psrf: 1.00537
+63: 
+63: 10_birkhoff
+63: Constrained Riemannian Hamiltonian Monte Carlo (Gaussian Density)
+63: Burn-in
+63: ....................
+63: Sampling
+63: ...........................................................
+63: Step size (final): 0.181818
+63: Discard Ratio: 0.06835
+63: Average Acceptance Probability: 0.931888
+63: max_psrf: 1.00321
+63: 
+63: ------------SIMDLEN=4-------------------
+63: 
+63:  ---Sampling polytopes 
+63: 100_skinny_cube
+63: Constrained Riemannian Hamiltonian Monte Carlo (Gaussian Density)
+63: Burn-in
+63: ....................
+63: Sampling
+63: ..............
+63: Step size (final): 0.181713
+63: Discard Ratio: 0.0296
+63: Average Acceptance Probability: 0.969932
+63: max_psrf: 1.0034
+63: 
+63: 5_cross
+63: Constrained Riemannian Hamiltonian Monte Carlo (Gaussian Density)
+63: Burn-in
+63: ....................
+63: Sampling
+63: ..............
+63: Step size (final): 0.2
+63: Discard Ratio: 0.00649286
+63: Average Acceptance Probability: 0.993585
+63: max_psrf: 1.00204
+63: 
+63: 100_simplex
+63: Constrained Riemannian Hamiltonian Monte Carlo (Gaussian Density)
+63: Burn-in
+63: ....................
+63: Sampling
+63: ..............
+63: Step size (final): 0.199759
+63: Discard Ratio: 0.0636714
+63: Average Acceptance Probability: 0.937097
+63: max_psrf: 1.00367
+63: 
+63: 50_prod_simplex
+63: Constrained Riemannian Hamiltonian Monte Carlo (Gaussian Density)
+63: Burn-in
+63: ....................
+63: Sampling
+63: ..............
+63: Step size (final): 0.2
+63: Discard Ratio: 0.0632071
+63: Average Acceptance Probability: 0.93679
+63: max_psrf: 1.00566
+63: 
+63: 10_birkhoff
+63: Constrained Riemannian Hamiltonian Monte Carlo (Gaussian Density)
+63: Burn-in
+63: ....................
+63: Sampling
+63: ..............
+63: Step size (final): 0.181818
+63: Discard Ratio: 0.0538857
+63: Average Acceptance Probability: 0.946007
+63: max_psrf: 1.00601
+63: 
+63: ===============================================================================
+63: [doctest] test cases:   1 |   1 passed | 0 failed | 3 skipped
+63: [doctest] assertions: 772 | 772 passed | 0 failed |
+63: [doctest] Status: SUCCESS!
+63/82 Test #63: crhmc_test_polytope_sampling .............................   Passed  137.97 sec
+test 65
+      Start 65: simple_mc_integration_over_limits
+
+65: Test command: /home/geom/geomshu/volesti6/test/simple_mc_integration "-tc=rectangle"
+65: Working Directory: /home/geom/geomshu/volesti6/test
+65: Test timeout computed to be: 10000000
+65: [doctest] doctest version is "2.4.9"
+65: [doctest] run with "--help" for options
+65: 
+65: TESTS FOR SIMPLE MC INTEGRATION OVER RECTANGLES USING UNIFORM RANDOM WALKS
+65: Computed integration value = 39.6237
+65: Expected integration value = 39.7
+65: Exact integration value = 40.25
+65: Relative error (expected) = 0.00192069
+65: Relative error (exact) = 0.015559
+65: Computed integration value = 13.7623
+65: Expected integration value = 13.65
+65: Exact integration value = 13.872
+65: Relative error (expected) = 0.00822965
+65: Relative error (exact) = 0.00790551
+65: Computed integration value = 2.94765
+65: Expected integration value = 2.99
+65: Exact integration value = 3.0607
+65: Relative error (expected) = 0.0141627
+65: Relative error (exact) = 0.0369348
+65: Computed integration value = 7.38166
+65: Expected integration value = 7.49
+65: Exact integration value = 7.46
+65: Relative error (expected) = 0.0144647
+65: Relative error (exact) = 0.0105014
+65: Computed integration value = 25.063
+65: Expected integration value = 24.8
+65: Exact integration value = 24.76
+65: Relative error (expected) = 0.0106053
+65: Relative error (exact) = 0.012238
+65: Computed integration value = 57.0296
+65: Expected integration value = 54.8
+65: Exact integration value = 55.25
+65: Relative error (expected) = 0.0406856
+65: Relative error (exact) = 0.0322094
+65: ===============================================================================
+65: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+65: [doctest] assertions: 6 | 6 passed | 0 failed |
+65: [doctest] Status: SUCCESS!
+64/82 Test #65: simple_mc_integration_over_limits ........................   Passed   19.42 sec
+test 66
+      Start 66: simple_mc_integration_over_cubes
+
+66: Test command: /home/geom/geomshu/volesti6/test/simple_mc_integration "-tc=cube"
+66: Working Directory: /home/geom/geomshu/volesti6/test
+66: Test timeout computed to be: 10000000
+66: [doctest] doctest version is "2.4.9"
+66: [doctest] run with "--help" for options
+66: 
+66: TESTS FOR SIMPLE MC INTEGRATION OVER CUBES USING UNIFORM RANDOM WALKS
+66: Computed integration value = 2.22149
+66: Expected integration value = 2.2
+66: Exact integration value = 2.23
+66: Relative error (expected) = 0.00976768
+66: Relative error (exact) = 0.00381664
+66: Computed integration value = 0.766649
+66: Expected integration value = 0.78
+66: Exact integration value = 0.777
+66: Relative error (expected) = 0.0171172
+66: Relative error (exact) = 0.0133223
+66: Computed integration value = 56.9336
+66: Expected integration value = 54.7
+66: Exact integration value = 55.25
+66: Relative error (expected) = 0.040834
+66: Relative error (exact) = 0.0304728
+66: Computed integration value = 421.491
+66: Expected integration value = 405.9
+66: Exact integration value = 410.69
+66: Relative error (expected) = 0.038412
+66: Relative error (exact) = 0.0263007
+66: Computed integration value = 3119.07
+66: Expected integration value = 3050
+66: Exact integration value = 3052.71
+66: Relative error (expected) = 0.0226447
+66: Relative error (exact) = 0.0217369
+66: ===============================================================================
+66: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+66: [doctest] assertions: 5 | 5 passed | 0 failed |
+66: [doctest] Status: SUCCESS!
+65/82 Test #66: simple_mc_integration_over_cubes .........................   Passed   51.04 sec
+test 67
+      Start 67: simple_mc_integration_over_simplices
+
+67: Test command: /home/geom/geomshu/volesti6/test/simple_mc_integration "-tc=simplex"
+67: Working Directory: /home/geom/geomshu/volesti6/test
+67: Test timeout computed to be: 10000000
+67: [doctest] doctest version is "2.4.9"
+67: [doctest] run with "--help" for options
+67: 
+67: TESTS FOR SIMPLE MC INTEGRATION OVER SIMPLICES USING UNIFORM RANDOM WALKS
+67: Computed integration value = 0.646823
+67: Expected integration value = 0.67
+67: Exact integration value = 0.666
+67: Relative error (expected) = 0.0345921
+67: Relative error (exact) = 0.0287938
+67: Computed integration value = 0.338012
+67: Expected integration value = 0.34
+67: Exact integration value = 0.333
+67: Relative error (expected) = 0.00584665
+67: Relative error (exact) = 0.0150515
+67: Computed integration value = 0.115672
+67: Expected integration value = 0.116
+67: Exact integration value = 0.1166
+67: Relative error (expected) = 0.00283085
+67: Relative error (exact) = 0.00796208
+67: Computed integration value = 0.00637779
+67: Expected integration value = 0.00656
+67: Exact integration value = 0.0063492
+67: Relative error (expected) = 0.0277756
+67: Relative error (exact) = 0.00450325
+67: Computed integration value = 0.000165113
+67: Expected integration value = 0.000159
+67: Exact integration value = 0.000159832
+67: Relative error (expected) = 0.0384476
+67: Relative error (exact) = 0.033042
+67: ===============================================================================
+67: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+67: [doctest] assertions: 5 | 5 passed | 0 failed |
+67: [doctest] Status: SUCCESS!
+66/82 Test #67: simple_mc_integration_over_simplices .....................   Passed   11.95 sec
+test 68
+      Start 68: simple_mc_integration_over_product_simplices
+
+68: Test command: /home/geom/geomshu/volesti6/test/simple_mc_integration "-tc=prod_simplex"
+68: Working Directory: /home/geom/geomshu/volesti6/test
+68: Test timeout computed to be: 10000000
+68: [doctest] doctest version is "2.4.9"
+68: [doctest] run with "--help" for options
+68: 
+68: TESTS FOR SIMPLE MC INTEGRATION OVER PRODUCT SIMPLICES USING UNIFORM RANDOM WALKS
+68: Computed integration value = 0.342106
+68: Expected integration value = 0.334
+68: Exact integration value = 0.333
+68: Relative error (expected) = 0.0242689
+68: Relative error (exact) = 0.0273447
+68: Computed integration value = 0.0828271
+68: Expected integration value = 0.0834
+68: Exact integration value = 0.0833
+68: Relative error (expected) = 0.00686941
+68: Relative error (exact) = 0.00567718
+68: Computed integration value = 0.0110618
+68: Expected integration value = 0.011
+68: Exact integration value = 0.01111
+68: Relative error (expected) = 0.00561923
+68: Relative error (exact) = 0.0043374
+68: Computed integration value = 3.66787e-05
+68: Expected integration value = 3.6e-05
+68: Exact integration value = 3.6375e-05
+68: Relative error (expected) = 0.0188534
+68: Relative error (exact) = 0.00834979
+68: Computed integration value = 2.44444e-08
+68: Expected integration value = 2.35e-08
+68: Exact integration value = 2.4079e-08
+68: Relative error (expected) = 0.0401871
+68: Relative error (exact) = 0.0151749
+68: ===============================================================================
+68: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+68: [doctest] assertions: 5 | 5 passed | 0 failed |
+68: [doctest] Status: SUCCESS!
+67/82 Test #68: simple_mc_integration_over_product_simplices .............   Passed   18.21 sec
+test 69
+      Start 69: simple_mc_integration_over_cross_polytopes
+
+69: Test command: /home/geom/geomshu/volesti6/test/simple_mc_integration "-tc=cross"
+69: Working Directory: /home/geom/geomshu/volesti6/test
+69: Test timeout computed to be: 10000000
+69: [doctest] doctest version is "2.4.9"
+69: [doctest] run with "--help" for options
+69: 
+69: TESTS FOR SIMPLE MC INTEGRATION OVER CROSS POLYTOPES USING UNIFORM RANDOM WALKS
+69: Computed integration value = 1.31159
+69: Expected integration value = 1.334
+69: Exact integration value = 1.33333
+69: Relative error (expected) = 0.0167962
+69: Relative error (exact) = 0.0163043
+69: Computed integration value = 1.33796
+69: Expected integration value = 1.334
+69: Exact integration value = 1.33333
+69: Relative error (expected) = 0.00296779
+69: Relative error (exact) = 0.00347178
+69: Computed integration value = 0.93343
+69: Expected integration value = 0.935
+69: Exact integration value = 0.933333
+69: Relative error (expected) = 0.00167958
+69: Relative error (exact) = 0.000103496
+69: Computed integration value = 0.201581
+69: Expected integration value = 0.2
+69: Exact integration value = 0.203174
+69: Relative error (expected) = 0.00790379
+69: Relative error (exact) = 0.00784176
+69: Computed integration value = 0.0205882
+69: Expected integration value = 0.02
+69: Exact integration value = 0.020458
+69: Relative error (expected) = 0.0294111
+69: Relative error (exact) = 0.00636529
+69: ===============================================================================
+69: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+69: [doctest] assertions: 5 | 5 passed | 0 failed |
+69: [doctest] Status: SUCCESS!
+68/82 Test #69: simple_mc_integration_over_cross_polytopes ...............   Passed    9.92 sec
+test 70
+      Start 70: simple_mc_integration_over_birkhoff_polytopes
+
+70: Test command: /home/geom/geomshu/volesti6/test/simple_mc_integration "-tc=birkhoff"
+70: Working Directory: /home/geom/geomshu/volesti6/test
+70: Test timeout computed to be: 10000000
+70: [doctest] doctest version is "2.4.9"
+70: [doctest] run with "--help" for options
+70: 
+70: TESTS FOR SIMPLE MC INTEGRATION OVER BIRKHOFF POLYTOPES USING UNIFORM RANDOM WALKS
+70: Computed integration value = 0.664547
+70: Expected integration value = 0.67
+70: Exact integration value = 0.6666
+70: Relative error (expected) = 0.00813811
+70: Relative error (exact) = 0.00307911
+70: Computed integration value = 0.0456372
+70: Expected integration value = 0.047
+70: Exact integration value = 0.04722
+70: Relative error (expected) = 0.0289959
+70: Relative error (exact) = 0.0335198
+70: Computed integration value = 0.000157869
+70: Expected integration value = 0.00015
+70: Exact integration value = 0.000164
+70: Relative error (expected) = 0.0524567
+70: Relative error (exact) = 0.0373872
+70: ===============================================================================
+70: [doctest] test cases: 1 | 1 passed | 0 failed | 5 skipped
+70: [doctest] assertions: 3 | 3 passed | 0 failed |
+70: [doctest] Status: SUCCESS!
+69/82 Test #70: simple_mc_integration_over_birkhoff_polytopes ............   Passed    5.13 sec
+test 71
+      Start 71: order_polytope_basics
+
+71: Test command: /home/geom/geomshu/volesti6/test/order_polytope "-tc=basics"
+71: Working Directory: /home/geom/geomshu/volesti6/test
+71: Test timeout computed to be: 10000000
+71: [doctest] doctest version is "2.4.9"
+71: [doctest] run with "--help" for options
+71: ===============================================================================
+71: [doctest] test cases:  1 |  1 passed | 0 failed | 3 skipped
+71: [doctest] assertions: 10 | 10 passed | 0 failed |
+71: [doctest] Status: SUCCESS!
+70/82 Test #71: order_polytope_basics ....................................   Passed    0.00 sec
+test 72
+      Start 72: order_polytope_line_intersect
+
+72: Test command: /home/geom/geomshu/volesti6/test/order_polytope "-tc=line_intersect"
+72: Working Directory: /home/geom/geomshu/volesti6/test
+72: Test timeout computed to be: 10000000
+72: [doctest] doctest version is "2.4.9"
+72: [doctest] run with "--help" for options
+72: ===============================================================================
+72: [doctest] test cases: 1 | 1 passed | 0 failed | 3 skipped
+72: [doctest] assertions: 1 | 1 passed | 0 failed |
+72: [doctest] Status: SUCCESS!
+71/82 Test #72: order_polytope_line_intersect ............................   Passed    0.00 sec
+test 73
+      Start 73: order_polytope_reflection
+
+73: Test command: /home/geom/geomshu/volesti6/test/order_polytope "-tc=reflection"
+73: Working Directory: /home/geom/geomshu/volesti6/test
+73: Test timeout computed to be: 10000000
+73: [doctest] doctest version is "2.4.9"
+73: [doctest] run with "--help" for options
+73: compute reflection of an incident ray with the facet number 2d (the first relation facet)
+73: ===============================================================================
+73: [doctest] test cases: 1 | 1 passed | 0 failed | 3 skipped
+73: [doctest] assertions: 1 | 1 passed | 0 failed |
+73: [doctest] Status: SUCCESS!
+72/82 Test #73: order_polytope_reflection ................................   Passed    0.00 sec
+test 74
+      Start 74: order_polytope_vec_mult
+
+74: Test command: /home/geom/geomshu/volesti6/test/order_polytope "-tc=vec_mult"
+74: Working Directory: /home/geom/geomshu/volesti6/test
+74: Test timeout computed to be: 10000000
+74: [doctest] doctest version is "2.4.9"
+74: [doctest] run with "--help" for options
+74: ===============================================================================
+74: [doctest] test cases: 1 | 1 passed | 0 failed | 3 skipped
+74: [doctest] assertions: 2 | 2 passed | 0 failed |
+74: [doctest] Status: SUCCESS!
+73/82 Test #74: order_polytope_vec_mult ..................................   Passed    0.00 sec
+test 75
+      Start 75: test_corre_spectra_classes
+
+75: Test command: /home/geom/geomshu/volesti6/test/matrix_sampling_test "-tc=corre_spectra"
+75: Working Directory: /home/geom/geomshu/volesti6/test
+75: Test timeout computed to be: 10000000
+75: [doctest] doctest version is "2.4.9"
+75: [doctest] run with "--help" for options
+75: Diameter of P = 0.57735
+75: ===============================================================================
+75: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+75: [doctest] assertions: 6 | 6 passed | 0 failed |
+75: [doctest] Status: SUCCESS!
+74/82 Test #75: test_corre_spectra_classes ...............................   Passed    0.00 sec
+test 76
+      Start 76: test_new_ball_uniform
+
+76: Test command: /home/geom/geomshu/volesti6/test/matrix_sampling_test "-tc=new_ball_uniform"
+76: Working Directory: /home/geom/geomshu/volesti6/test
+76: Test timeout computed to be: 10000000
+76: [doctest] doctest version is "2.4.9"
+76: [doctest] run with "--help" for options
+76: Ball Walk :: Test new sampling : 10000 uniform correlation matrices of size 3
+76: Elapsed time : 3 (ms)
+76: Fails 0 / 10000 samples
+76: psrf = 1.00098
+76: ===============================================================================
+76: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+76: [doctest] assertions: 2 | 2 passed | 0 failed |
+76: [doctest] Status: SUCCESS!
+75/82 Test #76: test_new_ball_uniform ....................................   Passed    0.01 sec
+test 77
+      Start 77: test_new_billiard_uniform
+
+77: Test command: /home/geom/geomshu/volesti6/test/matrix_sampling_test "-tc=new_billiard_uniform"
+77: Working Directory: /home/geom/geomshu/volesti6/test
+77: Test timeout computed to be: 10000000
+77: [doctest] doctest version is "2.4.9"
+77: [doctest] run with "--help" for options
+77: Billiard Walk :: Test new sampling : 1000 uniform correlation matrices of size 3
+77: Elapsed time : 2 (ms)
+77: Fails 0 / 1000 samples
+77: psrf = 1.01768
+77: ===============================================================================
+77: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+77: [doctest] assertions: 2 | 2 passed | 0 failed |
+77: [doctest] Status: SUCCESS!
+76/82 Test #77: test_new_billiard_uniform ................................   Passed    0.00 sec
+test 78
+      Start 78: test_new_accelerated_billiard_uniform
+
+78: Test command: /home/geom/geomshu/volesti6/test/matrix_sampling_test "-tc=new_accelerated_billiard_uniform"
+78: Working Directory: /home/geom/geomshu/volesti6/test
+78: Test timeout computed to be: 10000000
+78: [doctest] doctest version is "2.4.9"
+78: [doctest] run with "--help" for options
+78: Accelerated Billiard Walk :: Test new sampling : 1000 uniform correlation matrices of size 3
+78: Elapsed time : 2 (ms)
+78: Fails 0 / 1000 samples
+78: psrf = 1.00225
+78: ===============================================================================
+78: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+78: [doctest] assertions: 2 | 2 passed | 0 failed |
+78: [doctest] Status: SUCCESS!
+77/82 Test #78: test_new_accelerated_billiard_uniform ....................   Passed    0.00 sec
+test 79
+      Start 79: test_new_ball_uniform_MT
+
+79: Test command: /home/geom/geomshu/volesti6/test/matrix_sampling_test "-tc=new_ball_uniform_MT"
+79: Working Directory: /home/geom/geomshu/volesti6/test
+79: Test timeout computed to be: 10000000
+79: [doctest] doctest version is "2.4.9"
+79: [doctest] run with "--help" for options
+79: Ball Walk MT :: Test new sampling 2 : 10000 uniform correlation matrices of size 3
+79: Elapsed time : 4 (ms)
+79: Fails 0 / 10000 samples
+79: psrf = 1.00098
+79: ===============================================================================
+79: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+79: [doctest] assertions: 2 | 2 passed | 0 failed |
+79: [doctest] Status: SUCCESS!
+78/82 Test #79: test_new_ball_uniform_MT .................................   Passed    0.01 sec
+test 80
+      Start 80: test_new_rdhr_uniform_MT
+
+80: Test command: /home/geom/geomshu/volesti6/test/matrix_sampling_test "-tc=new_rdhr_uniform_MT"
+80: Working Directory: /home/geom/geomshu/volesti6/test
+80: Test timeout computed to be: 10000000
+80: [doctest] doctest version is "2.4.9"
+80: [doctest] run with "--help" for options
+80: RDHR Walk MT :: Test new sampling 2 : 10000 uniform correlation matrices of size 3
+80: Elapsed time : 22 (ms)
+80: Fails 0 / 10000 samples
+80: psrf = 1.00065
+80: ===============================================================================
+80: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+80: [doctest] assertions: 2 | 2 passed | 0 failed |
+80: [doctest] Status: SUCCESS!
+79/82 Test #80: test_new_rdhr_uniform_MT .................................   Passed    0.03 sec
+test 81
+      Start 81: test_new_billiard_uniform_MT
+
+81: Test command: /home/geom/geomshu/volesti6/test/matrix_sampling_test "-tc=new_billiard_uniform_MT"
+81: Working Directory: /home/geom/geomshu/volesti6/test
+81: Test timeout computed to be: 10000000
+81: [doctest] doctest version is "2.4.9"
+81: [doctest] run with "--help" for options
+81: Billiard Walk MT :: Test new sampling 2 : 1000 uniform correlation matrices of size 3
+81: Elapsed time : 2 (ms)
+81: Fails 0 / 1000 samples
+81: psrf = 1.01768
+81: ===============================================================================
+81: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+81: [doctest] assertions: 2 | 2 passed | 0 failed |
+81: [doctest] Status: SUCCESS!
+80/82 Test #81: test_new_billiard_uniform_MT .............................   Passed    0.01 sec
+test 82
+      Start 82: test_new_accelerated_billiard_uniform_MT
+
+82: Test command: /home/geom/geomshu/volesti6/test/matrix_sampling_test "-tc=new_accelerated_billiard_uniform_MT"
+82: Working Directory: /home/geom/geomshu/volesti6/test
+82: Test timeout computed to be: 10000000
+82: [doctest] doctest version is "2.4.9"
+82: [doctest] run with "--help" for options
+82: Accelerated Billiard Walk MT :: Test new sampling 2 : 1000 uniform correlation matrices of size 3
+82: Elapsed time : 3 (ms)
+82: Fails 0 / 1000 samples
+82: psrf = 1.00225
+82: ===============================================================================
+82: [doctest] test cases: 1 | 1 passed | 0 failed | 7 skipped
+82: [doctest] assertions: 2 | 2 passed | 0 failed |
+82: [doctest] Status: SUCCESS!
+81/82 Test #82: test_new_accelerated_billiard_uniform_MT .................   Passed    0.01 sec
+64: Here--------------------------
+64: PSRF: 1.0054
+64: ------------SIMDLEN=4-------------------
+64: 
+64:  ---Sampling sparse problems 
+64: Problem name: degen2
+64: Here--------------------------
+64: PSRF: 1.00482
+64: ===============================================================================
+64: [doctest] test cases:    1 |    1 passed | 0 failed | 3 skipped
+64: [doctest] assertions: 1004 | 1004 passed | 0 failed |
+64: [doctest] Status: SUCCESS!
+82/82 Test #64: crhmc_test_sparse_sampling ...............................   Passed  412.39 sec
+
+100% tests passed, 0 tests failed out of 82
+
+Total Test time (real) = 646.07 sec
